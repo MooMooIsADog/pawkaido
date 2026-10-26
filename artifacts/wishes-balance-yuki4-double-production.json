@@ -1,0 +1,811 @@
+{
+  "rewards": [
+    6,
+    4,
+    6,
+    4
+  ],
+  "wishTargets": [
+    3,
+    6,
+    3,
+    2
+  ],
+  "seedFormula": "Math.imul(seed,2654435761), seeds 1..N",
+  "notes": "Paired deterministic heuristic AI matches, split credit for tied winners; not human win-rate predictions.",
+  "production": {
+    "matchesPerEdition": 1000,
+    "draft": "production",
+    "classic": [
+      {
+        "dog": "MooMoo",
+        "games": 1000,
+        "winPct": 30.28,
+        "avgScore": 70.5,
+        "completionPct": 0,
+        "avgBonus": 0
+      },
+      {
+        "dog": "Yuki",
+        "games": 1000,
+        "winPct": 25.88,
+        "avgScore": 70.07,
+        "completionPct": 0,
+        "avgBonus": 0
+      },
+      {
+        "dog": "Biscuit",
+        "games": 1000,
+        "winPct": 15.13,
+        "avgScore": 64.77,
+        "completionPct": 0,
+        "avgBonus": 0
+      },
+      {
+        "dog": "Rex",
+        "games": 1000,
+        "winPct": 28.7,
+        "avgScore": 70.17,
+        "completionPct": 0,
+        "avgBonus": 0
+      }
+    ],
+    "wishes": [
+      {
+        "dog": "MooMoo",
+        "games": 1000,
+        "winPct": 23.13,
+        "avgScore": 74.08,
+        "completionPct": 96,
+        "avgBonus": 5.76
+      },
+      {
+        "dog": "Yuki",
+        "games": 1000,
+        "winPct": 37.13,
+        "avgScore": 79.03,
+        "completionPct": 95.4,
+        "avgBonus": 3.82
+      },
+      {
+        "dog": "Biscuit",
+        "games": 1000,
+        "winPct": 21.48,
+        "avgScore": 74.3,
+        "completionPct": 91.7,
+        "avgBonus": 5.5
+      },
+      {
+        "dog": "Rex",
+        "games": 1000,
+        "winPct": 18.25,
+        "avgScore": 72.29,
+        "completionPct": 99,
+        "avgBonus": 3.96
+      }
+    ],
+    "roles": [
+      {
+        "dog": "MooMoo",
+        "role": "泡汤老行家",
+        "classic": {
+          "games": 186,
+          "winPct": 48.92,
+          "avgScore": 74.32,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 186,
+          "winPct": 34.68,
+          "avgScore": 77.99,
+          "completionPct": 96.77,
+          "avgBonus": 5.81
+        }
+      },
+      {
+        "dog": "Yuki",
+        "role": "寻宝小商犬",
+        "classic": {
+          "games": 100,
+          "winPct": 10.5,
+          "avgScore": 64.92,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 100,
+          "winPct": 25,
+          "avgScore": 76.25,
+          "completionPct": 94,
+          "avgBonus": 3.76
+        }
+      },
+      {
+        "dog": "Biscuit",
+        "role": "犬守小神官",
+        "classic": {
+          "games": 88,
+          "winPct": 9.09,
+          "avgScore": 61.86,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 88,
+          "winPct": 15.91,
+          "avgScore": 70.92,
+          "completionPct": 87.5,
+          "avgBonus": 5.25
+        }
+      },
+      {
+        "dog": "Rex",
+        "role": "爪印画师",
+        "classic": {
+          "games": 168,
+          "winPct": 22.92,
+          "avgScore": 68.59,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 168,
+          "winPct": 4.17,
+          "avgScore": 68.14,
+          "completionPct": 100,
+          "avgBonus": 4
+        }
+      },
+      {
+        "dog": "MooMoo",
+        "role": "汪汪邮差",
+        "classic": {
+          "games": 97,
+          "winPct": 28.35,
+          "avgScore": 70.89,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 97,
+          "winPct": 22.68,
+          "avgScore": 74.94,
+          "completionPct": 100,
+          "avgBonus": 6
+        }
+      },
+      {
+        "dog": "Yuki",
+        "role": "摇尾艺人",
+        "classic": {
+          "games": 169,
+          "winPct": 30.37,
+          "avgScore": 72.38,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 169,
+          "winPct": 73.37,
+          "avgScore": 86.22,
+          "completionPct": 94.67,
+          "avgBonus": 3.79
+        }
+      },
+      {
+        "dog": "Biscuit",
+        "role": "寻宝小商犬",
+        "classic": {
+          "games": 94,
+          "winPct": 3.72,
+          "avgScore": 60.98,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 94,
+          "winPct": 17.91,
+          "avgScore": 73.34,
+          "completionPct": 87.23,
+          "avgBonus": 5.23
+        }
+      },
+      {
+        "dog": "Rex",
+        "role": "泡汤老行家",
+        "classic": {
+          "games": 184,
+          "winPct": 45.11,
+          "avgScore": 73.83,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 184,
+          "winPct": 22.55,
+          "avgScore": 71.88,
+          "completionPct": 98.91,
+          "avgBonus": 3.96
+        }
+      },
+      {
+        "dog": "MooMoo",
+        "role": "寻宝小商犬",
+        "classic": {
+          "games": 84,
+          "winPct": 17.26,
+          "avgScore": 66.6,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 84,
+          "winPct": 22.02,
+          "avgScore": 71.56,
+          "completionPct": 95.24,
+          "avgBonus": 5.71
+        }
+      },
+      {
+        "dog": "Yuki",
+        "role": "汪汪邮差",
+        "classic": {
+          "games": 83,
+          "winPct": 22.29,
+          "avgScore": 70.49,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 83,
+          "winPct": 42.77,
+          "avgScore": 80.48,
+          "completionPct": 97.59,
+          "avgBonus": 3.9
+        }
+      },
+      {
+        "dog": "Biscuit",
+        "role": "爪印画师",
+        "classic": {
+          "games": 175,
+          "winPct": 6.29,
+          "avgScore": 61.54,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 175,
+          "winPct": 9.14,
+          "avgScore": 70.45,
+          "completionPct": 92,
+          "avgBonus": 5.52
+        }
+      },
+      {
+        "dog": "MooMoo",
+        "role": "爪印画师",
+        "classic": {
+          "games": 180,
+          "winPct": 23.61,
+          "avgScore": 68.65,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 180,
+          "winPct": 10.56,
+          "avgScore": 69.48,
+          "completionPct": 94.44,
+          "avgBonus": 5.67
+        }
+      },
+      {
+        "dog": "Biscuit",
+        "role": "泡汤老行家",
+        "classic": {
+          "games": 177,
+          "winPct": 42.56,
+          "avgScore": 71.64,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 177,
+          "winPct": 8.19,
+          "avgScore": 72.2,
+          "completionPct": 100,
+          "avgBonus": 6
+        }
+      },
+      {
+        "dog": "Rex",
+        "role": "饭团浪客",
+        "classic": {
+          "games": 88,
+          "winPct": 22.16,
+          "avgScore": 70.93,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 88,
+          "winPct": 27.27,
+          "avgScore": 75.36,
+          "completionPct": 97.73,
+          "avgBonus": 3.91
+        }
+      },
+      {
+        "dog": "MooMoo",
+        "role": "犬守小神官",
+        "classic": {
+          "games": 88,
+          "winPct": 15.91,
+          "avgScore": 68.13,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 88,
+          "winPct": 18.56,
+          "avgScore": 73.38,
+          "completionPct": 93.18,
+          "avgBonus": 5.59
+        }
+      },
+      {
+        "dog": "Rex",
+        "role": "汪汪邮差",
+        "classic": {
+          "games": 86,
+          "winPct": 26.16,
+          "avgScore": 70.42,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 86,
+          "winPct": 17.44,
+          "avgScore": 72.13,
+          "completionPct": 97.67,
+          "avgBonus": 3.91
+        }
+      },
+      {
+        "dog": "Yuki",
+        "role": "饭团浪客",
+        "classic": {
+          "games": 85,
+          "winPct": 21.18,
+          "avgScore": 70.74,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 85,
+          "winPct": 40.59,
+          "avgScore": 80.69,
+          "completionPct": 96.47,
+          "avgBonus": 3.86
+        }
+      },
+      {
+        "dog": "Biscuit",
+        "role": "人气小团子",
+        "classic": {
+          "games": 86,
+          "winPct": 13.95,
+          "avgScore": 65.65,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 86,
+          "winPct": 16.28,
+          "avgScore": 72.49,
+          "completionPct": 96.51,
+          "avgBonus": 5.79
+        }
+      },
+      {
+        "dog": "Rex",
+        "role": "犬守小神官",
+        "classic": {
+          "games": 92,
+          "winPct": 19.57,
+          "avgScore": 67.32,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 92,
+          "winPct": 22.28,
+          "avgScore": 75.07,
+          "completionPct": 95.65,
+          "avgBonus": 3.83
+        }
+      },
+      {
+        "dog": "Yuki",
+        "role": "爪印画师",
+        "classic": {
+          "games": 181,
+          "winPct": 25.41,
+          "avgScore": 68.92,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 181,
+          "winPct": 9.39,
+          "avgScore": 71.58,
+          "completionPct": 91.71,
+          "avgBonus": 3.67
+        }
+      },
+      {
+        "dog": "Biscuit",
+        "role": "饭团浪客",
+        "classic": {
+          "games": 79,
+          "winPct": 13.92,
+          "avgScore": 66.61,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 79,
+          "winPct": 31.65,
+          "avgScore": 78.73,
+          "completionPct": 92.41,
+          "avgBonus": 5.54
+        }
+      },
+      {
+        "dog": "Rex",
+        "role": "樱花小掌柜",
+        "classic": {
+          "games": 12,
+          "winPct": 8.33,
+          "avgScore": 60.17,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 12,
+          "winPct": 16.67,
+          "avgScore": 65.58,
+          "completionPct": 100,
+          "avgBonus": 4
+        }
+      },
+      {
+        "dog": "Yuki",
+        "role": "犬守小神官",
+        "classic": {
+          "games": 103,
+          "winPct": 14.08,
+          "avgScore": 68.44,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 103,
+          "winPct": 33.01,
+          "avgScore": 79.37,
+          "completionPct": 97.09,
+          "avgBonus": 3.88
+        }
+      },
+      {
+        "dog": "Rex",
+        "role": "摇尾艺人",
+        "classic": {
+          "games": 191,
+          "winPct": 31.15,
+          "avgScore": 70.62,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 191,
+          "winPct": 27.75,
+          "avgScore": 76.48,
+          "completionPct": 100,
+          "avgBonus": 4
+        }
+      },
+      {
+        "dog": "Biscuit",
+        "role": "摇尾艺人",
+        "classic": {
+          "games": 192,
+          "winPct": 9.9,
+          "avgScore": 64.14,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 192,
+          "winPct": 46.35,
+          "avgScore": 80.7,
+          "completionPct": 85.94,
+          "avgBonus": 5.16
+        }
+      },
+      {
+        "dog": "MooMoo",
+        "role": "巡路小队长",
+        "classic": {
+          "games": 13,
+          "winPct": 10.26,
+          "avgScore": 67.85,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 13,
+          "winPct": 15.38,
+          "avgScore": 73.08,
+          "completionPct": 100,
+          "avgBonus": 6
+        }
+      },
+      {
+        "dog": "MooMoo",
+        "role": "饭团浪客",
+        "classic": {
+          "games": 93,
+          "winPct": 37.63,
+          "avgScore": 72.63,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 93,
+          "winPct": 32.26,
+          "avgScore": 77.66,
+          "completionPct": 100,
+          "avgBonus": 6
+        }
+      },
+      {
+        "dog": "MooMoo",
+        "role": "樱花小掌柜",
+        "classic": {
+          "games": 12,
+          "winPct": 25,
+          "avgScore": 68.75,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 12,
+          "winPct": 8.33,
+          "avgScore": 67.25,
+          "completionPct": 100,
+          "avgBonus": 6
+        }
+      },
+      {
+        "dog": "Yuki",
+        "role": "泡汤老行家",
+        "classic": {
+          "games": 161,
+          "winPct": 38.82,
+          "avgScore": 72.57,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 161,
+          "winPct": 42.44,
+          "avgScore": 80.93,
+          "completionPct": 97.52,
+          "avgBonus": 3.9
+        }
+      },
+      {
+        "dog": "Rex",
+        "role": "人气小团子",
+        "classic": {
+          "games": 82,
+          "winPct": 25.61,
+          "avgScore": 70.54,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 82,
+          "winPct": 4.88,
+          "avgScore": 68.71,
+          "completionPct": 100,
+          "avgBonus": 4
+        }
+      },
+      {
+        "dog": "MooMoo",
+        "role": "摇尾艺人",
+        "classic": {
+          "games": 161,
+          "winPct": 26.09,
+          "avgScore": 69.19,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 161,
+          "winPct": 32.92,
+          "avgScore": 77.34,
+          "completionPct": 91.3,
+          "avgBonus": 5.48
+        }
+      },
+      {
+        "dog": "Biscuit",
+        "role": "汪汪邮差",
+        "classic": {
+          "games": 89,
+          "winPct": 11.8,
+          "avgScore": 64.7,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 89,
+          "winPct": 23.6,
+          "avgScore": 74.11,
+          "completionPct": 91.01,
+          "avgBonus": 5.46
+        }
+      },
+      {
+        "dog": "Yuki",
+        "role": "人气小团子",
+        "classic": {
+          "games": 97,
+          "winPct": 34.54,
+          "avgScore": 70.38,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 97,
+          "winPct": 19.59,
+          "avgScore": 76.41,
+          "completionPct": 95.88,
+          "avgBonus": 3.84
+        }
+      },
+      {
+        "dog": "MooMoo",
+        "role": "人气小团子",
+        "classic": {
+          "games": 86,
+          "winPct": 37.21,
+          "avgScore": 72.78,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 86,
+          "winPct": 5.81,
+          "avgScore": 68.59,
+          "completionPct": 100,
+          "avgBonus": 6
+        }
+      },
+      {
+        "dog": "Rex",
+        "role": "寻宝小商犬",
+        "classic": {
+          "games": 89,
+          "winPct": 23.6,
+          "avgScore": 67.47,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 89,
+          "winPct": 11.8,
+          "avgScore": 69.56,
+          "completionPct": 100,
+          "avgBonus": 4
+        }
+      },
+      {
+        "dog": "Biscuit",
+        "role": "巡路小队长",
+        "classic": {
+          "games": 11,
+          "winPct": 9.09,
+          "avgScore": 60.82,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 11,
+          "winPct": 22.73,
+          "avgScore": 76,
+          "completionPct": 100,
+          "avgBonus": 6
+        }
+      },
+      {
+        "dog": "Biscuit",
+        "role": "樱花小掌柜",
+        "classic": {
+          "games": 9,
+          "winPct": 0,
+          "avgScore": 54.56,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 9,
+          "winPct": 22.22,
+          "avgScore": 75.56,
+          "completionPct": 77.78,
+          "avgBonus": 4.67
+        }
+      },
+      {
+        "dog": "Rex",
+        "role": "巡路小队长",
+        "classic": {
+          "games": 8,
+          "winPct": 37.5,
+          "avgScore": 72,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 8,
+          "winPct": 62.5,
+          "avgScore": 82.13,
+          "completionPct": 100,
+          "avgBonus": 4
+        }
+      },
+      {
+        "dog": "Yuki",
+        "role": "巡路小队长",
+        "classic": {
+          "games": 14,
+          "winPct": 28.57,
+          "avgScore": 72,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 14,
+          "winPct": 85.71,
+          "avgScore": 86.14,
+          "completionPct": 100,
+          "avgBonus": 4
+        }
+      },
+      {
+        "dog": "Yuki",
+        "role": "樱花小掌柜",
+        "classic": {
+          "games": 7,
+          "winPct": 0,
+          "avgScore": 62.29,
+          "completionPct": 0,
+          "avgBonus": 0
+        },
+        "wishes": {
+          "games": 7,
+          "winPct": 28.57,
+          "avgScore": 74,
+          "completionPct": 100,
+          "avgBonus": 4
+        }
+      }
+    ],
+    "changedWinner": 738
+  }
+}
