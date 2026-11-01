@@ -4,6 +4,8 @@ MooMoo、Yuki（哈士奇）、Biscuit（柯基）和 Rex（德牧）的本地�
 
 ## 开始
 
+推荐使用 Node.js 24；项目的 `.nvmrc` 已指定该版本。使用 nvm 时，首次在项目目录运行 `nvm install`，之后运行 `nvm use` 切换版本，无需修改其他项目的默认 Node.js 设置。
+
 ```sh
 cd pawkaido
 npm start
@@ -17,7 +19,20 @@ npm start
 - 点击地点查看规则与不可前往的原因，再点“带我去这里”。
 - 选择和事件都在棋盘中央弹窗中完成。“全程路书”可以查看后续三段路线。
 - 本地自动存档包含当前事件与牌堆，刷新不会重新抽牌。音乐音量单独保存。
-- 音乐默认关闭，点击“播放音乐”开始。使用浏览器原生音频循环，不需要外部音频服务。
+- 音乐默认开启；若浏览器拦截自动播放，第一次点击游戏后开始。点击“关闭音乐”可关闭并记住偏好。使用浏览器原生音频循环，不需要外部音频服务。
+
+## AIWANNA 静态发布包
+
+游戏本身无需服务端。`npm start` 使用 `scripts/serve.mjs` 在本机预览静态文件。
+
+在 macOS 上安装好 `cwebp`（WebP 工具）后，运行：
+
+```sh
+npm run build:aiwanna
+node scripts/serve.mjs .1gp/static-output
+```
+
+打包脚本将 PNG 转为 WebP、WAV 转为 AAC/MP4（使用系统 `afconvert`），仅在导出中替换对应资源路径；不改动 `dist/` 原始素材、规则或存档。输出为 `.1gp/static-output/`，源码与产物哈希清单为 `.1gp/static-build.json`，脚本会检查 3 MiB 上限。发布时上传这份现有静态产物，不重复构建。`1gp-kit/` 单独保存封面、真实截图与上架记录，不混入运行包。
 
 ## 实现范围
 
@@ -94,3 +109,30 @@ npm test
 `npm test` 包含原有玩法测试及扩展安装、移除和兼容检查。`npm run compare:refactor -- 1000 v1.0.0` 与旧版本逐步比较两种 AI、两种游戏模式共 4,000 组同种子对局，并输出 `artifacts/dlc-refactor-comparison.json`。
 
 安装、独立 ZIP 打包、接口和当前支持范围见 [扩展开发说明](docs/extensions.md)。当前是本地模块与内容包机制；没有自动下载、在线发布或多扩展组合功能。
+
+## 美国东海岸地图内容包
+
+新旅行可独立选择日本地图或美国东海岸地图，再选择经典版或狗狗心愿。美国四段为波士顿 → 纽波特 → 纽约 → 费城 → 华盛顿；沿原图小路从右上向左下前进，保留真实地标、Lovecraft 肖像和 Poe／黑猫／乌鸦彩蛋。地图介绍、路书、可见地点与卡牌名称随主题变化，规则、计分和 AI 不变。美东地图使用《MooMoo 的东岸小假期》原创合成试听版（88 BPM，120 秒）；日本地图保留原曲。音乐随地图切换，共用开关和音量偏好。
+
+内容包目录 `dist/map-packs/east-coast/`；原图只读归档在 `artifacts/east-coast-maps-v1/`，以后不得覆盖。运行 `node scripts/check-map-originals.mjs` 校验。安装、存档与独立打包详见 [地图内容包说明](docs/map-packs.md)。
+
+注意：AIWANNA 的 3 MiB 本体导出默认不包含可选地图 DLC；本地 `npm start` 包含已安装的全部地图。美国地图应作为独立内容包交付，详见地图包说明。
+
+## 为游戏添加自己的旅行路线
+
+仓库附带 [pawkaido-travel-maps skill](.agents/skills/pawkaido-travel-maps/SKILL.md)，整理了路线与地标规划、绘图/修图、原图保护、弯道标定、主题接入和浏览器验收流程，并附带两个无需第三方依赖的工具：路线坐标编译器、原图哈希与只读校验器。
+
+在支持项目 skills 的助手中，可这样提出任务：
+
+```text
+使用 $pawkaido-travel-maps，帮我增加一套意大利旅行地图内容包。
+保持现有规则和四只狗不变；先规划四章路线与地标，画风用复古明信片风，先画第一章让我看。
+```
+
+如果客户端没有自动发现 skill，让助手先读取 `.agents/skills/pawkaido-travel-maps/SKILL.md`，按其中流程完成任务。skill 随本仓库保存，无需复制作者电脑的个人配置或凭据；生成位图需使用助手环境中可用的绘图工具。工具用法与验证步骤见 skill 内的引用文档。
+
+## 美东音乐试听 v1
+
+《MooMoo 的东岸小假期》使用合成钢琴、木吉他、低音、簧管、颤音琴与柔和刷鼓，F 大调、轻微摇摆律动，44 小节组成两分钟循环。母带、乐谱事件与说明保存在 `artifacts/east-coast-music-v1/`，运行音频在 `dist/map-packs/east-coast/assets/music/`。
+
+生成脚本为 `scripts/compose-east-coast.py`，用 `uv run --no-project --with numpy python scripts/compose-east-coast.py` 运行；已存在的母带不覆盖。仅生成过程需要 numpy，游戏仍无需安装依赖。新访问默认尝试播放，自动播放被拦截时等待游戏点击；关闭偏好与音量会保存，音乐条显示当前曲目与实际时长。

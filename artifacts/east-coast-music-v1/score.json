@@ -1,0 +1,5649 @@
+{
+  "metrics": {
+    "title": "MooMoo 的东岸小假期",
+    "version": 1,
+    "bpm": 88,
+    "key": "F major",
+    "bars": 44,
+    "durationSeconds": 120.0,
+    "sampleRate": 32000,
+    "peak": 0.72,
+    "rms": 0.09922794799187386,
+    "loopEdgeDelta": [
+      4.167495525581044e-05,
+      0.000853613689238991
+    ],
+    "notes": 803,
+    "voices": [
+      "bass",
+      "guitar",
+      "piano",
+      "reed",
+      "vibes"
+    ],
+    "render": "deterministic local synthesis, no samples"
+  },
+  "events": [
+    {
+      "bar": 1,
+      "beat": 0,
+      "midi": 41,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 1,
+      "beat": 2,
+      "midi": 48,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 1,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 1,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 1,
+      "beat": 0.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 1,
+      "beat": 0.05399999999999999,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 1,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 1,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 1,
+      "beat": 1.536,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 1,
+      "beat": 1.554,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 1,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 1,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 1,
+      "beat": 3.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 1,
+      "beat": 3.054,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 1,
+      "beat": 0,
+      "midi": 77,
+      "durationBeats": 1.2,
+      "voice": "vibes"
+    },
+    {
+      "bar": 1,
+      "beat": 2.5,
+      "midi": 74,
+      "durationBeats": 1.2,
+      "voice": "vibes"
+    },
+    {
+      "bar": 2,
+      "beat": 0,
+      "midi": 38,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 2,
+      "beat": 2,
+      "midi": 45,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 2,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 2,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 2,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 2,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 2,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 2,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 2,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 2,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 2,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 2,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 2,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 2,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 2,
+      "beat": 0,
+      "midi": 81,
+      "durationBeats": 1.2,
+      "voice": "vibes"
+    },
+    {
+      "bar": 2,
+      "beat": 2.5,
+      "midi": 77,
+      "durationBeats": 1.2,
+      "voice": "vibes"
+    },
+    {
+      "bar": 3,
+      "beat": 0,
+      "midi": 43,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 3,
+      "beat": 2,
+      "midi": 50,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 3,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 3,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 3,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 3,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 3,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 3,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 3,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 3,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 3,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 3,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 3,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 3,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 3,
+      "beat": 0,
+      "midi": 81,
+      "durationBeats": 1.2,
+      "voice": "vibes"
+    },
+    {
+      "bar": 3,
+      "beat": 2.5,
+      "midi": 77,
+      "durationBeats": 1.2,
+      "voice": "vibes"
+    },
+    {
+      "bar": 4,
+      "beat": 0,
+      "midi": 36,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 4,
+      "beat": 2,
+      "midi": 43,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 4,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 4,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 4,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 4,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 4,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 4,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 4,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 4,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 4,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 4,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 4,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 4,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 4,
+      "beat": 0,
+      "midi": 79,
+      "durationBeats": 1.2,
+      "voice": "vibes"
+    },
+    {
+      "bar": 4,
+      "beat": 2.5,
+      "midi": 76,
+      "durationBeats": 1.2,
+      "voice": "vibes"
+    },
+    {
+      "bar": 5,
+      "beat": 0,
+      "midi": 41,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 5,
+      "beat": 2,
+      "midi": 48,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 5,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 5,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 5,
+      "beat": 0.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 5,
+      "beat": 0.05399999999999999,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 5,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 5,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 5,
+      "beat": 1.536,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 5,
+      "beat": 1.554,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 5,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 5,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 5,
+      "beat": 3.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 5,
+      "beat": 3.054,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 5,
+      "beat": 0.5,
+      "midi": 69,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 5,
+      "beat": 1.5,
+      "midi": 72,
+      "durationBeats": 0.7,
+      "voice": "piano"
+    },
+    {
+      "bar": 5,
+      "beat": 2.5,
+      "midi": 74,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 5,
+      "beat": 3.5,
+      "midi": 72,
+      "durationBeats": 0.35,
+      "voice": "piano"
+    },
+    {
+      "bar": 6,
+      "beat": 0,
+      "midi": 38,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 6,
+      "beat": 2,
+      "midi": 45,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 6,
+      "beat": 0.0,
+      "midi": 54,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 6,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 6,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 6,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 6,
+      "beat": 1.5,
+      "midi": 54,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 6,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 6,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 6,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 6,
+      "beat": 3.0,
+      "midi": 54,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 6,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 6,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 6,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 6,
+      "beat": 0,
+      "midi": 69,
+      "durationBeats": 1.0,
+      "voice": "piano"
+    },
+    {
+      "bar": 6,
+      "beat": 1.5,
+      "midi": 66,
+      "durationBeats": 0.45,
+      "voice": "piano"
+    },
+    {
+      "bar": 6,
+      "beat": 2.5,
+      "midi": 69,
+      "durationBeats": 0.45,
+      "voice": "piano"
+    },
+    {
+      "bar": 6,
+      "beat": 3,
+      "midi": 72,
+      "durationBeats": 0.7,
+      "voice": "piano"
+    },
+    {
+      "bar": 6,
+      "beat": 3.65,
+      "midi": 81,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 7,
+      "beat": 0,
+      "midi": 43,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 7,
+      "beat": 2,
+      "midi": 50,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 7,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 7,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 7,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 7,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 7,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 7,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 7,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 7,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 7,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 7,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 7,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 7,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 7,
+      "beat": 0.5,
+      "midi": 70,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 7,
+      "beat": 1.5,
+      "midi": 69,
+      "durationBeats": 0.45,
+      "voice": "piano"
+    },
+    {
+      "bar": 7,
+      "beat": 2,
+      "midi": 67,
+      "durationBeats": 0.8,
+      "voice": "piano"
+    },
+    {
+      "bar": 7,
+      "beat": 3.5,
+      "midi": 65,
+      "durationBeats": 0.4,
+      "voice": "piano"
+    },
+    {
+      "bar": 8,
+      "beat": 0,
+      "midi": 36,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 8,
+      "beat": 2,
+      "midi": 43,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 8,
+      "beat": 3.5,
+      "midi": 48,
+      "durationBeats": 0.35,
+      "voice": "bass"
+    },
+    {
+      "bar": 8,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 8,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 8,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 8,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 8,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 8,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 8,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 8,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 8,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 8,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 8,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 8,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 8,
+      "beat": 0,
+      "midi": 64,
+      "durationBeats": 1.1,
+      "voice": "piano"
+    },
+    {
+      "bar": 8,
+      "beat": 2,
+      "midi": 67,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 8,
+      "beat": 3,
+      "midi": 70,
+      "durationBeats": 0.65,
+      "voice": "piano"
+    },
+    {
+      "bar": 8,
+      "beat": 3.65,
+      "midi": 79,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 9,
+      "beat": 0,
+      "midi": 45,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 9,
+      "beat": 2,
+      "midi": 52,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 9,
+      "beat": 0.0,
+      "midi": 55,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 9,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 9,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 9,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 9,
+      "beat": 1.5,
+      "midi": 55,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 9,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 9,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 9,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 9,
+      "beat": 3.0,
+      "midi": 55,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 9,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 9,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 9,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 9,
+      "beat": 0.5,
+      "midi": 72,
+      "durationBeats": 0.65,
+      "voice": "piano"
+    },
+    {
+      "bar": 9,
+      "beat": 1.5,
+      "midi": 76,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 9,
+      "beat": 2.5,
+      "midi": 74,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 9,
+      "beat": 3.5,
+      "midi": 72,
+      "durationBeats": 0.35,
+      "voice": "piano"
+    },
+    {
+      "bar": 10,
+      "beat": 0,
+      "midi": 38,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 10,
+      "beat": 2,
+      "midi": 45,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 10,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 10,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 10,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 10,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 10,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 10,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 10,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 10,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 10,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 10,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 10,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 10,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 10,
+      "beat": 0,
+      "midi": 69,
+      "durationBeats": 1.25,
+      "voice": "piano"
+    },
+    {
+      "bar": 10,
+      "beat": 2,
+      "midi": 65,
+      "durationBeats": 0.65,
+      "voice": "piano"
+    },
+    {
+      "bar": 10,
+      "beat": 3,
+      "midi": 64,
+      "durationBeats": 0.5,
+      "voice": "piano"
+    },
+    {
+      "bar": 10,
+      "beat": 3.65,
+      "midi": 81,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 11,
+      "beat": 0,
+      "midi": 43,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 11,
+      "beat": 2,
+      "midi": 50,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 11,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 11,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 11,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 11,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 11,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 11,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 11,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 11,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 11,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 11,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 11,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 11,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 11,
+      "beat": 0.5,
+      "midi": 62,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 11,
+      "beat": 1.5,
+      "midi": 65,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 11,
+      "beat": 2.5,
+      "midi": 69,
+      "durationBeats": 0.5,
+      "voice": "piano"
+    },
+    {
+      "bar": 11,
+      "beat": 3.5,
+      "midi": 67,
+      "durationBeats": 0.35,
+      "voice": "piano"
+    },
+    {
+      "bar": 12,
+      "beat": 0,
+      "midi": 36,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 12,
+      "beat": 2,
+      "midi": 43,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 12,
+      "beat": 3.5,
+      "midi": 48,
+      "durationBeats": 0.35,
+      "voice": "bass"
+    },
+    {
+      "bar": 12,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 12,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 12,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 12,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 12,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 12,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 12,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 12,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 12,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 12,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 12,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 12,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 12,
+      "beat": 0,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "piano"
+    },
+    {
+      "bar": 12,
+      "beat": 1.5,
+      "midi": 67,
+      "durationBeats": 0.5,
+      "voice": "piano"
+    },
+    {
+      "bar": 12,
+      "beat": 2.5,
+      "midi": 65,
+      "durationBeats": 0.8,
+      "voice": "piano"
+    },
+    {
+      "bar": 12,
+      "beat": 3.65,
+      "midi": 79,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 12,
+      "beat": 3.1,
+      "midi": 58,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 12,
+      "beat": 3.13,
+      "midi": 62,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 12,
+      "beat": 3.16,
+      "midi": 64,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 12,
+      "beat": 3.19,
+      "midi": 67,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 13,
+      "beat": 0,
+      "midi": 41,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 13,
+      "beat": 2,
+      "midi": 48,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 13,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 13,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 13,
+      "beat": 0.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 13,
+      "beat": 0.05399999999999999,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 13,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 13,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 13,
+      "beat": 1.536,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 13,
+      "beat": 1.554,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 13,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 13,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 13,
+      "beat": 3.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 13,
+      "beat": 3.054,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 13,
+      "beat": 0.5,
+      "midi": 69,
+      "durationBeats": 0.55,
+      "voice": "reed"
+    },
+    {
+      "bar": 13,
+      "beat": 1.5,
+      "midi": 72,
+      "durationBeats": 0.7,
+      "voice": "reed"
+    },
+    {
+      "bar": 13,
+      "beat": 2.5,
+      "midi": 74,
+      "durationBeats": 0.55,
+      "voice": "reed"
+    },
+    {
+      "bar": 13,
+      "beat": 3.5,
+      "midi": 72,
+      "durationBeats": 0.35,
+      "voice": "reed"
+    },
+    {
+      "bar": 14,
+      "beat": 0,
+      "midi": 38,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 14,
+      "beat": 2,
+      "midi": 45,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 14,
+      "beat": 0.0,
+      "midi": 54,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 14,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 14,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 14,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 14,
+      "beat": 1.5,
+      "midi": 54,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 14,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 14,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 14,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 14,
+      "beat": 3.0,
+      "midi": 54,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 14,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 14,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 14,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 14,
+      "beat": 0,
+      "midi": 69,
+      "durationBeats": 1.0,
+      "voice": "reed"
+    },
+    {
+      "bar": 14,
+      "beat": 1.5,
+      "midi": 66,
+      "durationBeats": 0.45,
+      "voice": "reed"
+    },
+    {
+      "bar": 14,
+      "beat": 2.5,
+      "midi": 69,
+      "durationBeats": 0.45,
+      "voice": "reed"
+    },
+    {
+      "bar": 14,
+      "beat": 3,
+      "midi": 72,
+      "durationBeats": 0.7,
+      "voice": "reed"
+    },
+    {
+      "bar": 14,
+      "beat": 3.65,
+      "midi": 81,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 15,
+      "beat": 0,
+      "midi": 43,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 15,
+      "beat": 2,
+      "midi": 50,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 15,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 15,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 15,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 15,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 15,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 15,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 15,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 15,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 15,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 15,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 15,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 15,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 15,
+      "beat": 0.5,
+      "midi": 70,
+      "durationBeats": 0.55,
+      "voice": "reed"
+    },
+    {
+      "bar": 15,
+      "beat": 1.5,
+      "midi": 69,
+      "durationBeats": 0.45,
+      "voice": "reed"
+    },
+    {
+      "bar": 15,
+      "beat": 2,
+      "midi": 67,
+      "durationBeats": 0.8,
+      "voice": "reed"
+    },
+    {
+      "bar": 15,
+      "beat": 3.5,
+      "midi": 65,
+      "durationBeats": 0.4,
+      "voice": "reed"
+    },
+    {
+      "bar": 16,
+      "beat": 0,
+      "midi": 36,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 16,
+      "beat": 2,
+      "midi": 43,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 16,
+      "beat": 3.5,
+      "midi": 48,
+      "durationBeats": 0.35,
+      "voice": "bass"
+    },
+    {
+      "bar": 16,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 16,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 16,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 16,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 16,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 16,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 16,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 16,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 16,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 16,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 16,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 16,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 16,
+      "beat": 0,
+      "midi": 64,
+      "durationBeats": 1.1,
+      "voice": "reed"
+    },
+    {
+      "bar": 16,
+      "beat": 2,
+      "midi": 67,
+      "durationBeats": 0.55,
+      "voice": "reed"
+    },
+    {
+      "bar": 16,
+      "beat": 3,
+      "midi": 70,
+      "durationBeats": 0.65,
+      "voice": "reed"
+    },
+    {
+      "bar": 16,
+      "beat": 3.65,
+      "midi": 79,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 17,
+      "beat": 0,
+      "midi": 45,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 17,
+      "beat": 2,
+      "midi": 52,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 17,
+      "beat": 0.0,
+      "midi": 55,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 17,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 17,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 17,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 17,
+      "beat": 1.5,
+      "midi": 55,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 17,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 17,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 17,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 17,
+      "beat": 3.0,
+      "midi": 55,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 17,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 17,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 17,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 17,
+      "beat": 0.5,
+      "midi": 72,
+      "durationBeats": 0.65,
+      "voice": "piano"
+    },
+    {
+      "bar": 17,
+      "beat": 1.5,
+      "midi": 76,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 17,
+      "beat": 2.5,
+      "midi": 74,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 17,
+      "beat": 3.5,
+      "midi": 72,
+      "durationBeats": 0.35,
+      "voice": "piano"
+    },
+    {
+      "bar": 18,
+      "beat": 0,
+      "midi": 38,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 18,
+      "beat": 2,
+      "midi": 45,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 18,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 18,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 18,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 18,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 18,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 18,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 18,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 18,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 18,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 18,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 18,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 18,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 18,
+      "beat": 0,
+      "midi": 69,
+      "durationBeats": 1.25,
+      "voice": "piano"
+    },
+    {
+      "bar": 18,
+      "beat": 2,
+      "midi": 65,
+      "durationBeats": 0.65,
+      "voice": "piano"
+    },
+    {
+      "bar": 18,
+      "beat": 3,
+      "midi": 64,
+      "durationBeats": 0.5,
+      "voice": "piano"
+    },
+    {
+      "bar": 18,
+      "beat": 3.65,
+      "midi": 81,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 19,
+      "beat": 0,
+      "midi": 43,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 19,
+      "beat": 2,
+      "midi": 50,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 19,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 19,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 19,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 19,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 19,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 19,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 19,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 19,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 19,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 19,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 19,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 19,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 19,
+      "beat": 0.5,
+      "midi": 62,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 19,
+      "beat": 1.5,
+      "midi": 65,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 19,
+      "beat": 2.5,
+      "midi": 69,
+      "durationBeats": 0.5,
+      "voice": "piano"
+    },
+    {
+      "bar": 19,
+      "beat": 3.5,
+      "midi": 67,
+      "durationBeats": 0.35,
+      "voice": "piano"
+    },
+    {
+      "bar": 20,
+      "beat": 0,
+      "midi": 36,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 20,
+      "beat": 2,
+      "midi": 43,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 20,
+      "beat": 3.5,
+      "midi": 48,
+      "durationBeats": 0.35,
+      "voice": "bass"
+    },
+    {
+      "bar": 20,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 20,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 20,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 20,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 20,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 20,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 20,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 20,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 20,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 20,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 20,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 20,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 20,
+      "beat": 0,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "piano"
+    },
+    {
+      "bar": 20,
+      "beat": 1.5,
+      "midi": 67,
+      "durationBeats": 0.5,
+      "voice": "piano"
+    },
+    {
+      "bar": 20,
+      "beat": 2.5,
+      "midi": 65,
+      "durationBeats": 0.8,
+      "voice": "piano"
+    },
+    {
+      "bar": 20,
+      "beat": 3.65,
+      "midi": 79,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 20,
+      "beat": 3.1,
+      "midi": 58,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 20,
+      "beat": 3.13,
+      "midi": 62,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 20,
+      "beat": 3.16,
+      "midi": 64,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 20,
+      "beat": 3.19,
+      "midi": 67,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 21,
+      "beat": 0,
+      "midi": 34,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 21,
+      "beat": 2,
+      "midi": 41,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 21,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 21,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 21,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 21,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 21,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 21,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 21,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 21,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 21,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 21,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 21,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 21,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 21,
+      "beat": 0,
+      "midi": 74,
+      "durationBeats": 1.1,
+      "voice": "reed"
+    },
+    {
+      "bar": 21,
+      "beat": 1.5,
+      "midi": 77,
+      "durationBeats": 0.65,
+      "voice": "reed"
+    },
+    {
+      "bar": 21,
+      "beat": 3,
+      "midi": 74,
+      "durationBeats": 0.8,
+      "voice": "reed"
+    },
+    {
+      "bar": 22,
+      "beat": 0,
+      "midi": 34,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 22,
+      "beat": 2,
+      "midi": 41,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 22,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 22,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 22,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 22,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 22,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 22,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 22,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 22,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 22,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 22,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 22,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 22,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 22,
+      "beat": 0.5,
+      "midi": 72,
+      "durationBeats": 0.7,
+      "voice": "reed"
+    },
+    {
+      "bar": 22,
+      "beat": 2,
+      "midi": 69,
+      "durationBeats": 1.3,
+      "voice": "reed"
+    },
+    {
+      "bar": 23,
+      "beat": 0,
+      "midi": 35,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 23,
+      "beat": 2,
+      "midi": 41,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 23,
+      "beat": 0.0,
+      "midi": 56,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 23,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 23,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 23,
+      "beat": 0.05399999999999999,
+      "midi": 68,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 23,
+      "beat": 1.5,
+      "midi": 56,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 23,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 23,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 23,
+      "beat": 1.554,
+      "midi": 68,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 23,
+      "beat": 3.0,
+      "midi": 56,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 23,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 23,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 23,
+      "beat": 3.054,
+      "midi": 68,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 23,
+      "beat": 0,
+      "midi": 68,
+      "durationBeats": 0.65,
+      "voice": "reed"
+    },
+    {
+      "bar": 23,
+      "beat": 1.5,
+      "midi": 71,
+      "durationBeats": 0.7,
+      "voice": "reed"
+    },
+    {
+      "bar": 23,
+      "beat": 3,
+      "midi": 74,
+      "durationBeats": 0.7,
+      "voice": "reed"
+    },
+    {
+      "bar": 24,
+      "beat": 0,
+      "midi": 41,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 24,
+      "beat": 2,
+      "midi": 48,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 24,
+      "beat": 3.5,
+      "midi": 53,
+      "durationBeats": 0.35,
+      "voice": "bass"
+    },
+    {
+      "bar": 24,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 24,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 24,
+      "beat": 0.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 24,
+      "beat": 0.05399999999999999,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 24,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 24,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 24,
+      "beat": 1.536,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 24,
+      "beat": 1.554,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 24,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 24,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 24,
+      "beat": 3.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 24,
+      "beat": 3.054,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 24,
+      "beat": 0.5,
+      "midi": 72,
+      "durationBeats": 1.2,
+      "voice": "reed"
+    },
+    {
+      "bar": 24,
+      "beat": 2.5,
+      "midi": 69,
+      "durationBeats": 0.8,
+      "voice": "reed"
+    },
+    {
+      "bar": 25,
+      "beat": 0,
+      "midi": 45,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 25,
+      "beat": 2,
+      "midi": 52,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 25,
+      "beat": 0.0,
+      "midi": 55,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 25,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 25,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 25,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 25,
+      "beat": 1.5,
+      "midi": 55,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 25,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 25,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 25,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 25,
+      "beat": 3.0,
+      "midi": 55,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 25,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 25,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 25,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 25,
+      "beat": 0,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "reed"
+    },
+    {
+      "bar": 25,
+      "beat": 1,
+      "midi": 69,
+      "durationBeats": 0.55,
+      "voice": "reed"
+    },
+    {
+      "bar": 25,
+      "beat": 2.5,
+      "midi": 72,
+      "durationBeats": 0.8,
+      "voice": "reed"
+    },
+    {
+      "bar": 26,
+      "beat": 0,
+      "midi": 38,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 26,
+      "beat": 2,
+      "midi": 45,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 26,
+      "beat": 0.0,
+      "midi": 54,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 26,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 26,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 26,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 26,
+      "beat": 1.5,
+      "midi": 54,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 26,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 26,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 26,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 26,
+      "beat": 3.0,
+      "midi": 54,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 26,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 26,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 26,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 26,
+      "beat": 0.5,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "reed"
+    },
+    {
+      "bar": 26,
+      "beat": 2,
+      "midi": 66,
+      "durationBeats": 0.7,
+      "voice": "reed"
+    },
+    {
+      "bar": 26,
+      "beat": 3,
+      "midi": 64,
+      "durationBeats": 0.6,
+      "voice": "reed"
+    },
+    {
+      "bar": 27,
+      "beat": 0,
+      "midi": 43,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 27,
+      "beat": 2,
+      "midi": 50,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 27,
+      "beat": 0.0,
+      "midi": 59,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 27,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 27,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 27,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 27,
+      "beat": 1.5,
+      "midi": 59,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 27,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 27,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 27,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 27,
+      "beat": 3.0,
+      "midi": 59,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 27,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 27,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 27,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 27,
+      "beat": 0,
+      "midi": 67,
+      "durationBeats": 0.8,
+      "voice": "reed"
+    },
+    {
+      "bar": 27,
+      "beat": 1.5,
+      "midi": 71,
+      "durationBeats": 0.65,
+      "voice": "reed"
+    },
+    {
+      "bar": 27,
+      "beat": 2.5,
+      "midi": 69,
+      "durationBeats": 0.8,
+      "voice": "reed"
+    },
+    {
+      "bar": 28,
+      "beat": 0,
+      "midi": 36,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 28,
+      "beat": 2,
+      "midi": 43,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 28,
+      "beat": 3.5,
+      "midi": 48,
+      "durationBeats": 0.35,
+      "voice": "bass"
+    },
+    {
+      "bar": 28,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 28,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 28,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 28,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 28,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 28,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 28,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 28,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 28,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 28,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 28,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 28,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 28,
+      "beat": 0.5,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "reed"
+    },
+    {
+      "bar": 28,
+      "beat": 2,
+      "midi": 64,
+      "durationBeats": 1.0,
+      "voice": "reed"
+    },
+    {
+      "bar": 29,
+      "beat": 0,
+      "midi": 41,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 29,
+      "beat": 2,
+      "midi": 48,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 29,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 29,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 29,
+      "beat": 0.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 29,
+      "beat": 0.05399999999999999,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 29,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 29,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 29,
+      "beat": 1.536,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 29,
+      "beat": 1.554,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 29,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 29,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 29,
+      "beat": 3.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 29,
+      "beat": 3.054,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 29,
+      "beat": 0.5,
+      "midi": 69,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 29,
+      "beat": 1.5,
+      "midi": 72,
+      "durationBeats": 0.7,
+      "voice": "piano"
+    },
+    {
+      "bar": 29,
+      "beat": 2.5,
+      "midi": 74,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 29,
+      "beat": 3.5,
+      "midi": 72,
+      "durationBeats": 0.35,
+      "voice": "piano"
+    },
+    {
+      "bar": 30,
+      "beat": 0,
+      "midi": 38,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 30,
+      "beat": 2,
+      "midi": 45,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 30,
+      "beat": 0.0,
+      "midi": 54,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 30,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 30,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 30,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 30,
+      "beat": 1.5,
+      "midi": 54,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 30,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 30,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 30,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 30,
+      "beat": 3.0,
+      "midi": 54,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 30,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 30,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 30,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 30,
+      "beat": 0,
+      "midi": 69,
+      "durationBeats": 1.0,
+      "voice": "piano"
+    },
+    {
+      "bar": 30,
+      "beat": 1.5,
+      "midi": 66,
+      "durationBeats": 0.45,
+      "voice": "piano"
+    },
+    {
+      "bar": 30,
+      "beat": 2.5,
+      "midi": 69,
+      "durationBeats": 0.45,
+      "voice": "piano"
+    },
+    {
+      "bar": 30,
+      "beat": 3,
+      "midi": 72,
+      "durationBeats": 0.7,
+      "voice": "piano"
+    },
+    {
+      "bar": 30,
+      "beat": 3.65,
+      "midi": 81,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 31,
+      "beat": 0,
+      "midi": 43,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 31,
+      "beat": 2,
+      "midi": 50,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 31,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 31,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 31,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 31,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 31,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 31,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 31,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 31,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 31,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 31,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 31,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 31,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 31,
+      "beat": 0.5,
+      "midi": 70,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 31,
+      "beat": 1.5,
+      "midi": 69,
+      "durationBeats": 0.45,
+      "voice": "piano"
+    },
+    {
+      "bar": 31,
+      "beat": 2,
+      "midi": 67,
+      "durationBeats": 0.8,
+      "voice": "piano"
+    },
+    {
+      "bar": 31,
+      "beat": 3.5,
+      "midi": 65,
+      "durationBeats": 0.4,
+      "voice": "piano"
+    },
+    {
+      "bar": 32,
+      "beat": 0,
+      "midi": 36,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 32,
+      "beat": 2,
+      "midi": 43,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 32,
+      "beat": 3.5,
+      "midi": 48,
+      "durationBeats": 0.35,
+      "voice": "bass"
+    },
+    {
+      "bar": 32,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 32,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 32,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 32,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 32,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 32,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 32,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 32,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 32,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 32,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 32,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 32,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 32,
+      "beat": 0,
+      "midi": 64,
+      "durationBeats": 1.1,
+      "voice": "piano"
+    },
+    {
+      "bar": 32,
+      "beat": 2,
+      "midi": 67,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 32,
+      "beat": 3,
+      "midi": 70,
+      "durationBeats": 0.65,
+      "voice": "piano"
+    },
+    {
+      "bar": 32,
+      "beat": 3.65,
+      "midi": 79,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 33,
+      "beat": 0,
+      "midi": 45,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 33,
+      "beat": 2,
+      "midi": 52,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 33,
+      "beat": 0.0,
+      "midi": 55,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 33,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 33,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 33,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 33,
+      "beat": 1.5,
+      "midi": 55,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 33,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 33,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 33,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 33,
+      "beat": 3.0,
+      "midi": 55,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 33,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 33,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 33,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 33,
+      "beat": 0.5,
+      "midi": 72,
+      "durationBeats": 0.65,
+      "voice": "piano"
+    },
+    {
+      "bar": 33,
+      "beat": 1.5,
+      "midi": 76,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 33,
+      "beat": 2.5,
+      "midi": 74,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 33,
+      "beat": 3.5,
+      "midi": 72,
+      "durationBeats": 0.35,
+      "voice": "piano"
+    },
+    {
+      "bar": 34,
+      "beat": 0,
+      "midi": 38,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 34,
+      "beat": 2,
+      "midi": 45,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 34,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 34,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 34,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 34,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 34,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 34,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 34,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 34,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 34,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 34,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 34,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 34,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 34,
+      "beat": 0,
+      "midi": 69,
+      "durationBeats": 1.25,
+      "voice": "piano"
+    },
+    {
+      "bar": 34,
+      "beat": 2,
+      "midi": 65,
+      "durationBeats": 0.65,
+      "voice": "piano"
+    },
+    {
+      "bar": 34,
+      "beat": 3,
+      "midi": 64,
+      "durationBeats": 0.5,
+      "voice": "piano"
+    },
+    {
+      "bar": 34,
+      "beat": 3.65,
+      "midi": 81,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 35,
+      "beat": 0,
+      "midi": 43,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 35,
+      "beat": 2,
+      "midi": 50,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 35,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 35,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 35,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 35,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 35,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 35,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 35,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 35,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 35,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 35,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 35,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 35,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 35,
+      "beat": 0.5,
+      "midi": 62,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 35,
+      "beat": 1.5,
+      "midi": 65,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 35,
+      "beat": 2.5,
+      "midi": 69,
+      "durationBeats": 0.5,
+      "voice": "piano"
+    },
+    {
+      "bar": 35,
+      "beat": 3.5,
+      "midi": 67,
+      "durationBeats": 0.35,
+      "voice": "piano"
+    },
+    {
+      "bar": 36,
+      "beat": 0,
+      "midi": 36,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 36,
+      "beat": 2,
+      "midi": 43,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 36,
+      "beat": 3.5,
+      "midi": 48,
+      "durationBeats": 0.35,
+      "voice": "bass"
+    },
+    {
+      "bar": 36,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 36,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 36,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 36,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 36,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 36,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 36,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 36,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 36,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 36,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 36,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 36,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 36,
+      "beat": 0,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "piano"
+    },
+    {
+      "bar": 36,
+      "beat": 1.5,
+      "midi": 67,
+      "durationBeats": 0.5,
+      "voice": "piano"
+    },
+    {
+      "bar": 36,
+      "beat": 2.5,
+      "midi": 65,
+      "durationBeats": 0.8,
+      "voice": "piano"
+    },
+    {
+      "bar": 36,
+      "beat": 3.65,
+      "midi": 79,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 36,
+      "beat": 3.1,
+      "midi": 58,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 36,
+      "beat": 3.13,
+      "midi": 62,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 36,
+      "beat": 3.16,
+      "midi": 64,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 36,
+      "beat": 3.19,
+      "midi": 67,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 37,
+      "beat": 0,
+      "midi": 41,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 37,
+      "beat": 2,
+      "midi": 48,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 37,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 37,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 37,
+      "beat": 0.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 37,
+      "beat": 0.05399999999999999,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 37,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 37,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 37,
+      "beat": 1.536,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 37,
+      "beat": 1.554,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 37,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 37,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 37,
+      "beat": 3.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 37,
+      "beat": 3.054,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 37,
+      "beat": 0.5,
+      "midi": 69,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 37,
+      "beat": 1.5,
+      "midi": 72,
+      "durationBeats": 0.7,
+      "voice": "piano"
+    },
+    {
+      "bar": 37,
+      "beat": 2.5,
+      "midi": 74,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 37,
+      "beat": 3.5,
+      "midi": 72,
+      "durationBeats": 0.35,
+      "voice": "piano"
+    },
+    {
+      "bar": 38,
+      "beat": 0,
+      "midi": 38,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 38,
+      "beat": 2,
+      "midi": 45,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 38,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 38,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 38,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 38,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 38,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 38,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 38,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 38,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 38,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 38,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 38,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 38,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 38,
+      "beat": 0,
+      "midi": 69,
+      "durationBeats": 1.0,
+      "voice": "piano"
+    },
+    {
+      "bar": 38,
+      "beat": 1.5,
+      "midi": 66,
+      "durationBeats": 0.45,
+      "voice": "piano"
+    },
+    {
+      "bar": 38,
+      "beat": 2.5,
+      "midi": 69,
+      "durationBeats": 0.45,
+      "voice": "piano"
+    },
+    {
+      "bar": 38,
+      "beat": 3,
+      "midi": 72,
+      "durationBeats": 0.7,
+      "voice": "piano"
+    },
+    {
+      "bar": 38,
+      "beat": 3.65,
+      "midi": 81,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 39,
+      "beat": 0,
+      "midi": 43,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 39,
+      "beat": 2,
+      "midi": 50,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 39,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 39,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 39,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 39,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 39,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 39,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 39,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 39,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 39,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 39,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 39,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 39,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 39,
+      "beat": 0.5,
+      "midi": 70,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 39,
+      "beat": 1.5,
+      "midi": 69,
+      "durationBeats": 0.45,
+      "voice": "piano"
+    },
+    {
+      "bar": 39,
+      "beat": 2,
+      "midi": 67,
+      "durationBeats": 0.8,
+      "voice": "piano"
+    },
+    {
+      "bar": 39,
+      "beat": 3.5,
+      "midi": 65,
+      "durationBeats": 0.4,
+      "voice": "piano"
+    },
+    {
+      "bar": 40,
+      "beat": 0,
+      "midi": 36,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 40,
+      "beat": 2,
+      "midi": 43,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 40,
+      "beat": 3.5,
+      "midi": 48,
+      "durationBeats": 0.35,
+      "voice": "bass"
+    },
+    {
+      "bar": 40,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 40,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 40,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 40,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 40,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 40,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 40,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 40,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 40,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 40,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 40,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 40,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 40,
+      "beat": 0,
+      "midi": 64,
+      "durationBeats": 1.1,
+      "voice": "piano"
+    },
+    {
+      "bar": 40,
+      "beat": 2,
+      "midi": 67,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 40,
+      "beat": 3,
+      "midi": 70,
+      "durationBeats": 0.65,
+      "voice": "piano"
+    },
+    {
+      "bar": 40,
+      "beat": 3.65,
+      "midi": 79,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 41,
+      "beat": 0,
+      "midi": 34,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 41,
+      "beat": 2,
+      "midi": 41,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 41,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 41,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 41,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 41,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 41,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 41,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 41,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 41,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 41,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 41,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 41,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 41,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 41,
+      "beat": 0.5,
+      "midi": 72,
+      "durationBeats": 0.65,
+      "voice": "piano"
+    },
+    {
+      "bar": 41,
+      "beat": 1.5,
+      "midi": 76,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 41,
+      "beat": 2.5,
+      "midi": 74,
+      "durationBeats": 0.55,
+      "voice": "piano"
+    },
+    {
+      "bar": 41,
+      "beat": 3.5,
+      "midi": 72,
+      "durationBeats": 0.35,
+      "voice": "piano"
+    },
+    {
+      "bar": 42,
+      "beat": 0,
+      "midi": 41,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 42,
+      "beat": 2,
+      "midi": 48,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 42,
+      "beat": 0.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 42,
+      "beat": 0.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 42,
+      "beat": 0.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 42,
+      "beat": 0.05399999999999999,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 42,
+      "beat": 1.5,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 42,
+      "beat": 1.518,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 42,
+      "beat": 1.536,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 42,
+      "beat": 1.554,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 42,
+      "beat": 3.0,
+      "midi": 57,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 42,
+      "beat": 3.018,
+      "midi": 60,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 42,
+      "beat": 3.036,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 42,
+      "beat": 3.054,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 42,
+      "beat": 0,
+      "midi": 69,
+      "durationBeats": 1.25,
+      "voice": "piano"
+    },
+    {
+      "bar": 42,
+      "beat": 2,
+      "midi": 65,
+      "durationBeats": 0.65,
+      "voice": "piano"
+    },
+    {
+      "bar": 42,
+      "beat": 3,
+      "midi": 64,
+      "durationBeats": 0.5,
+      "voice": "piano"
+    },
+    {
+      "bar": 42,
+      "beat": 3.65,
+      "midi": 77,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 43,
+      "beat": 0,
+      "midi": 43,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 43,
+      "beat": 2,
+      "midi": 50,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 43,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 43,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 43,
+      "beat": 0.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 43,
+      "beat": 0.05399999999999999,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 43,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 43,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 43,
+      "beat": 1.536,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 43,
+      "beat": 1.554,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 43,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 43,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 43,
+      "beat": 3.036,
+      "midi": 65,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 43,
+      "beat": 3.054,
+      "midi": 69,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 43,
+      "beat": 0.5,
+      "midi": 62,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 43,
+      "beat": 1.5,
+      "midi": 65,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 43,
+      "beat": 2.5,
+      "midi": 69,
+      "durationBeats": 0.5,
+      "voice": "piano"
+    },
+    {
+      "bar": 43,
+      "beat": 3.5,
+      "midi": 67,
+      "durationBeats": 0.35,
+      "voice": "piano"
+    },
+    {
+      "bar": 44,
+      "beat": 0,
+      "midi": 36,
+      "durationBeats": 1.25,
+      "voice": "bass"
+    },
+    {
+      "bar": 44,
+      "beat": 2,
+      "midi": 43,
+      "durationBeats": 1.0,
+      "voice": "bass"
+    },
+    {
+      "bar": 44,
+      "beat": 3.5,
+      "midi": 48,
+      "durationBeats": 0.35,
+      "voice": "bass"
+    },
+    {
+      "bar": 44,
+      "beat": 0.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 44,
+      "beat": 0.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 44,
+      "beat": 0.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 44,
+      "beat": 0.05399999999999999,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 44,
+      "beat": 1.5,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 44,
+      "beat": 1.518,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 44,
+      "beat": 1.536,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 44,
+      "beat": 1.554,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 44,
+      "beat": 3.0,
+      "midi": 58,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 44,
+      "beat": 3.018,
+      "midi": 62,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 44,
+      "beat": 3.036,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 44,
+      "beat": 3.054,
+      "midi": 67,
+      "durationBeats": 0.7,
+      "voice": "guitar"
+    },
+    {
+      "bar": 44,
+      "beat": 0,
+      "midi": 64,
+      "durationBeats": 0.7,
+      "voice": "piano"
+    },
+    {
+      "bar": 44,
+      "beat": 1.5,
+      "midi": 67,
+      "durationBeats": 0.5,
+      "voice": "piano"
+    },
+    {
+      "bar": 44,
+      "beat": 2.5,
+      "midi": 65,
+      "durationBeats": 0.8,
+      "voice": "piano"
+    },
+    {
+      "bar": 44,
+      "beat": 3.65,
+      "midi": 79,
+      "durationBeats": 0.6,
+      "voice": "vibes"
+    },
+    {
+      "bar": 44,
+      "beat": 3.1,
+      "midi": 58,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 44,
+      "beat": 3.13,
+      "midi": 62,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 44,
+      "beat": 3.16,
+      "midi": 64,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    },
+    {
+      "bar": 44,
+      "beat": 3.19,
+      "midi": 67,
+      "durationBeats": 0.6,
+      "voice": "piano"
+    }
+  ]
+}

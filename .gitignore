@@ -32,5 +32,8 @@ id_ed25519*
 *.zip
 /releases/
 
+# AIWANNA local build artifacts and publisher session state
+.1gp/
+
 # dist/ contains the actual game source; artifacts/ contains QA evidence.
 # Both directories intentionally remain tracked.

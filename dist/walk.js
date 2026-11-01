@@ -1,5 +1,5 @@
 import {INNS} from './data.js';
-import {mapPoints,pathFor} from './map.js';
+import {roadPath} from './map.js';
 
 // Replay precisely the same cubic curves drawn on the map, including skipped stops.
 export async function walkOnMap({dog,from,to,leg,fast,sprite,animateSprites}){
@@ -7,9 +7,9 @@ export async function walkOnMap({dog,from,to,leg,fast,sprite,animateSprites}){
  if(!canvas||to<=from||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
  const wasList=root.classList.contains('map-list-mode'),view=document.querySelector('[data-map-control="view"]');
  root.classList.remove('map-list-mode');if(wasList){view.textContent='地点列表';view.setAttribute('aria-pressed','false');}
- const points=mapPoints(leg,INNS[leg+1]-INNS[leg]+1);
+ const count=INNS[leg+1]-INNS[leg]+1;
  const path=document.createElementNS('http://www.w3.org/2000/svg','path');
- path.setAttribute('d',pathFor(points,from-INNS[leg],to-INNS[leg]));
+ path.setAttribute('d',roadPath(leg,count,from-INNS[leg],to-INNS[leg]));
  const svg=canvas.querySelector('.map-path');svg.append(path);
  const length=path.getTotalLength(),duration=Math.max(fast?450:1000,Math.min(fast?1600:4600,length*(fast?1.2:3.5)));
  const source=root.querySelector(`.stop[data-id="${from}"] .sprite[data-dog="${dog}"]`)?.closest('.token');

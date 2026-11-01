@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pawkaido 旅行地图内容包"
+  short_description: "为狗狗旅行游戏规划路线、绘制与修订地图、标定弯道并验证接入效果"
+  default_prompt: "使用 $pawkaido-travel-maps，为 Pawkaido 增加我指定地区的四章旅行地图内容包，保持现有玩法并保留原始素材。"

@@ -1,8 +1,9 @@
 import{extensions,extensionLoadErrors}from'./extensions.js';
-import{DOGS,BOARD,INNS,INN_NAMES,LEG_NAMES,LIMITS,TYPES,ROLE,FAMILIES,ENCOUNTERS}from'./data.js';
+import{DOGS,BOARD,INNS,LIMITS,TYPES,ROLE,FAMILIES,ENCOUNTERS}from'./data.js';
 import{newGame,current,act,legalReason,legalMoves,giftPurchase,giftScore,mealCost,mealReason,aiAction,validateSave,saveCompatibilityError}from'./engine.js';
 import{initMusic}from'./music.js';
-import{REGIONS,mapStoryHTML,mapPoints,mapMarkup,mapAtlasHTML,initMapControls}from'./map.js';
+import{mapStoryHTML,mapPoints,mapMarkup,mapAtlasHTML,initMapControls}from'./map.js';
+import{getMapPack,setMapPack,mapPacks,mapIdForSave,hasMapPack,mapLoadErrors,themeText,themeDOM}from'./map-content.js';
 import{walkOnMap}from'./walk.js';
 import{scoreBreakdown,SCORE_LABELS,AWARD_NAMES}from'./scores.js';
 history.scrollRestoration='manual';
@@ -14,9 +15,16 @@ const awardNames=AWARD_NAMES;
 const ledgerNames=SCORE_LABELS;
 let s=null,aux=null,selected=[],aiTimer=null,fast=false,toastTimer=null,dialogKey='',saveOK=true,lastFocus=null,moving=false;
 try{const raw=localStorage.getItem(KEY);if(raw){const parsed=JSON.parse(raw);if(validateSave(parsed))s=parsed;else toast(saveCompatibilityError(parsed)||'旧旅行记录没能读懂，可以重新出发哦。');}}catch{toast('暂时无法读取存档，本次仍然可以旅行。');}
+let INN_NAMES,LEG_NAMES;
+function shownMapId(){for(let a=aux;a;a=a.back)if(['welcome','new'].includes(a.kind))return a.mapPack||mapIdForSave(s);return mapIdForSave(s);}
+function syncMap(){const pack=setMapPack(shownMapId());INN_NAMES=pack.innNames;LEG_NAMES=pack.legNames;return pack;}
+function mapPicker(){return `<fieldset class="map-pack-picker" data-map-literal><legend>这次去哪里散步？</legend><div class="map-pack-options">${mapPacks().map(p=>`<label class="map-pack-option ${p.id===shownMapId()?'selected':''}"><input type="radio" name="map-pack" data-ui="map-pack" data-id="${p.id}" value="${p.id}" ${p.id===shownMapId()?'checked':''}><span class="map-pack-thumb" style="background-image:url('${p.regions[0].image}');background-size:${p.regions[0].imageSize};background-position:${p.regions[0].imagePosition}"></span><strong>${esc(p.name)}</strong><small>${esc(p.description)}</small></label>`).join('')}</div><p class="empty">地图与玩法分别选择，可搭配经典版或狗狗心愿。</p></fieldset>`;}
 if(!s)aux={kind:'welcome'};
+syncMap();
+if(s?.presentation?.mapPack&&!hasMapPack(s.presentation.mapPack))toast('这局的地图包暂时不可用，先用日本地图显示；旅行进度仍然保留。');
+if(mapLoadErrors.length)toast(mapLoadErrors.join('；'));
 if(extensionLoadErrors.length)toast(extensionLoadErrors.join('；'));
-initMusic();initMapControls();
+const music=initMusic();initMapControls();
 function save(){if(!s)return;try{localStorage.setItem(KEY,JSON.stringify(s));saveOK=true;}catch{saveOK=false;}$('#save-status').textContent=saveOK?'本地旅行 · 已自动保存':'本次可玩 · 浏览器未允许存档';}
 function toast(text){const el=$('#toast');el.textContent=text;el.classList.add('toast-visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('toast-visible'),3000);}
 async function dispatch(action){
@@ -29,7 +37,7 @@ async function dispatch(action){
   const dog=current(before),destination=BOARD[action.id];moving=true;
   $('#modal').close();dialogKey='';$('#route').dataset.walking='true';$('#route').setAttribute('aria-busy','true');
   const locked=[...document.querySelectorAll('.top-actions,.sidebar,.collection,.map-toolbar,.map-stops')];locked.forEach(el=>el.inert=true);
-  $('#turn-strip').innerHTML='<span class="turn-dot"></span><strong>'+DOGS[dog.id].name+' 正在散步</strong><span class="turn-hint">沿着小路，去'+esc(destination.name)+'…</span>';
+  $('#turn-strip').innerHTML='<span class="turn-dot"></span><strong>'+DOGS[dog.id].name+' 正在散步</strong><span class="turn-hint">沿着小路，去'+esc(themeText(destination.name))+'…</span>';
   try{await walkOnMap({dog:dog.id,from:dog.pos,to:action.id,leg:before.leg,fast,sprite,animateSprites});}
   catch(error){console.warn('Walking presentation ended early',error);}
   finally{moving=false;delete $('#route').dataset.walking;$('#route').removeAttribute('aria-busy');locked.forEach(el=>el.inert=false);}
@@ -37,7 +45,7 @@ async function dispatch(action){
  render();
 }
 function previewState(){const st=newGame(42);st.phase='move';return st;}
-function render(){const state=s||previewState(),p=current(state),leg=state.leg;
+function render(){const pack=syncMap();music.setTrack(pack.music);document.body.dataset.mapPack=pack.id;document.title=pack.heading+' · '+pack.tagline;$('.brand h1').innerHTML=esc(pack.heading)+'<span>'+esc(pack.tagline)+'</span>';$('#map-pack-label').textContent=pack.name;$('footer>span').innerHTML='PAWKAIDO <b>·</b> '+esc(pack.heading);const state=s||previewState(),p=current(state),leg=state.leg;
  $('#chapter-label').textContent=`CHAPTER ${String(leg+1).padStart(2,'0')} / 04 · ${extensions.editionName(state.edition)}`;
  $('#chapter-title').textContent=LEG_NAMES[leg];
  $('#chapters').innerHTML=LEG_NAMES.map((n,i)=>`<div class="chapter ${i===leg?'active':i<leg?'done':''}"><b>${i+1}</b><span>${n}</span></div>`).join('');
@@ -45,7 +53,7 @@ function render(){const state=s||previewState(),p=current(state),leg=state.leg;
  $('#turn-strip').innerHTML=`<span class="turn-dot"></span><strong>${!s?'准备出发':s.ended?'江户到了！':s.phase==='draft'?`${DOGS[p.id].name} 挑选旅行能力`:`轮到 ${DOGS[p.id].name} ${p.human?'· 你来决定':'· AI'}`}</strong><span class="turn-hint">${hint}</span>${s?.phase==='draft'?'<button class="text-button" data-ui="resume-draft">继续选择能力 →</button>':''}${s&&!s.ended?`<button class="text-button" data-ui="speed" aria-label="切换 AI 行动速度">${fast?'AI 快速':'AI 慢速'}</button>`:''}`;
  const start=INNS[leg],end=INNS[leg+1],points=mapPoints(leg,end-start+1);
  const buttons=BOARD.slice(start,end+1).map((b,i)=>{const occupants=state.players.filter(q=>q.pos===b.id).sort((a,b)=>a.lane-b.lane),reason=s?legalReason(s,b.id):'',available=s?.phase==='move'&&p.human&&!reason;const t=TYPES[b.type];const reward={farm:'+3 币',temple:'捐 1–3 币',village:'四类组套',spring:'+2 / 3 分',encounter:'遇见好朋友',inn:'必停 · 鲜食 +6 分',paddy:'3 片画卷',mountain:'4 片画卷',sea:'5 片画卷'}[b.type];
- return `<button class="stop ${available?'available':''} ${b.type==='inn'?'inn':''} ${s&&b.id<p.pos?'past':''} ${occupants.length?'occupied':''} ${s&&p.pos===b.id?'active-position':''}" data-ui="stop" data-id="${b.id}" style="--stop-color:${t.color};--map-left:${points[i][0]}%;--map-top:${points[i][1]}%" aria-label="${b.id} 号 ${b.name}${available?'，可前往':reason?'，'+reason:''}" title="${reason||t.hint}"><span class="number">${String(b.id).padStart(2,'0')}</span><span class="capacity">${b.capacity===4?'⌂':b.capacity===2?'●○':'●'}</span><span class="stop-icon">${t.icon}</span><strong class="stop-name">${b.type==='inn'?b.name.split(' · ')[1]:b.name}</strong><span class="stop-reward">${b.id===0?'起点 · 整理背包':reward}</span><span class="tokens">${occupants.map(q=>`<span class="token" data-lane="${q.lane===0?'●':'○'}" title="${DOGS[q.id].name} · ${q.lane===0?'路边位':'外侧位'}">${sprite(q.id,s&&q.id===p.id?0:6)}</span>`).join('')}</span></button>`;
+ return `<button class="stop ${available?'available':''} ${b.type==='inn'?'inn':''} ${s&&b.id<p.pos?'past':''} ${occupants.length?'occupied':''} ${s&&p.pos===b.id?'active-position':''}" data-ui="stop" data-id="${b.id}" style="--stop-color:${t.color};--map-left:${points[i][0]}%;--map-top:${points[i][1]}%" aria-label="${b.id} 号 ${b.name}${available?'，可前往':reason?'，'+reason:''}" title="${reason||t.hint}"><span class="number">${String(b.id).padStart(2,'0')}</span><span class="capacity">${b.capacity===4?'⌂':b.capacity===2?'●○':'●'}</span><span class="stop-icon">${t.icon}</span><strong class="stop-name">${b.type==='inn'?themeText(b.name).split(' · ')[1]:b.name}</strong><span class="stop-reward">${b.id===0?'起点 · 整理背包':reward}</span><span class="tokens">${occupants.map(q=>`<span class="token" data-lane="${q.lane===0?'●':'○'}" title="${DOGS[q.id].name} · ${q.lane===0?'路边位':'外侧位'}">${sprite(q.id,s&&q.id===p.id?0:6)}</span>`).join('')}</span></button>`;
  }).join('');
  const scroll=$('#route').dataset.leg===String(leg)?($('#route .map-scroll')?.scrollLeft||0):0;
  $('#route').dataset.leg=leg;
@@ -54,17 +62,17 @@ function render(){const state=s||previewState(),p=current(state),leg=state.leg;
  $('#players').innerHTML=state.players.map(q=>`<div class="traveller ${s&&q.id===p.id&&!s.ended?'current':''}" data-ui="player" data-id="${q.id}" role="button" tabindex="0" aria-label="查看 ${DOGS[q.id].name} 的旅行手账">${sprite(q.id)}<div class="info"><strong>${DOGS[q.id].name}</strong><small>${q.id===0?'你':s?.mode==='table'?'同屏':'AI'}</small><div class="role">${q.role?ROLE[q.role].name:DOGS[q.id].breed}</div><div class="money">◉ ${q.cash} 爪爪币</div>${extensions.render('mini',q)}</div><div class="score"><b>${q.score}</b><small>旅途分</small></div></div>`).join('');
  $('#log').innerHTML=state.log.length?state.log.slice(0,3).map(l=>`<li><b>${l.dog<0?'🐾':DOGS[l.dog].name+' · '}${esc(l.title)}</b><p>${esc(l.text.length>66?l.text.slice(0,65)+'…':l.text)}</p></li>`).join(''):'<li><b>一张空白的旅行手账</b><p>风景、鲜食、新朋友……<br>每次停靠，都会留下小小回忆。</p></li>';
  $('#collection').innerHTML=collectionSummary(state.players[0]);
- renderModal();scheduleAI();animateSprites();
+ renderModal();for(const id of ['#route','#turn-strip','#players','#log','#collection'])themeDOM($(id));scheduleAI();animateSprites();
 }
 function extensionCards(p,score=false){return extensions.render('card',p,{score,ended:!!s?.ended});}
 function collectionSummary(p){return `${extensionCards(p)}<div class="collection-grid">${Object.entries(LIMITS).map(([type,n])=>`<div class="pano-card ${type}"><div class="pano-label"><span>${TYPES[type].icon} ${TYPES[type].name}</span><span>${p.pano[type]} / ${n}</span></div><div class="pano-pieces">${Array.from({length:n},(_,i)=>`<span class="pano-piece ${i<p.pano[type]?'filled':''}" title="第 ${i+1} 片 · ${i+1} 分"></span>`).join('')}</div></div>`).join('')}<div class="pano-counts"><span>🎐 伴手礼 <b>${p.gifts.length}</b>　♨ 泡汤 <b>${p.springs.length}</b></span><span>🍱 鲜食 <b>${p.meals.length}</b>　⛩ 捐赠 <b>${p.donations}</b></span></div></div>`;}
 function shell(title,sub,body,actions='',options={}){const id=options.dog??(s?current(s).id:0);return `<div class="dialog-inner"><div class="dialog-top"><span class="eyebrow">${options.label||'PAWKAIDO · LITTLE MOMENTS'}</span><div>${s&&!s.ended?`<button class="text-button" data-ui="speed">AI ${fast?'快速':'慢速'}</button>`:''}${aux?.kind==='rules'?'':'<button class="text-button" data-ui="rules">MooMoo 讲规则</button>'}${options.close?'<button class="close-button" data-ui="close" aria-label="关闭弹窗">×</button>':''}</div></div><div class="dialog-hero">${sprite(id,options.row??0)}<div><h2 id="dialog-title">${title}</h2><p>${sub}</p></div></div>${body}${actions?`<div class="dialog-actions">${actions}</div>`:''}</div>`;}
-function renderModal(){if(moving)return;let html='',key='';const p=s?current(s):null;
+function renderModal(){if(moving)return;const pack=syncMap();let html='',key='';const p=s?current(s):null;
  if(aux){key=`aux-${aux.kind}-${aux.page??''}-${aux.id??''}`;
   if(aux.kind==='welcome'||aux.kind==='new'){
-   html=shell(aux.kind==='new'?'再出发一次？':'和我去散步吧！','汪！我是 MooMoo。樱花开啦，我们四只小狗一起去江户，把一路的小美好装进背包。',`<div class="note-box">不用掷骰子，也不用抢着到终点。<br><b>走在最后的狗狗先行动，收集旅途中最多的快乐。</b></div>${aux.kind==='new'?'<p class="dialog-copy">开始新的旅行会替换当前这局的本地存档。</p>':''}<fieldset class="edition-picker"><legend>这次怎么玩？</legend>${extensions.editions().map(e=>`<label><input type="radio" name="edition" data-ui="edition" data-id="${esc(e.id)}" value="${esc(e.id)}" ${(aux.edition||'classic')===e.id?'checked':''}>${esc(e.name)}<small>${esc(e.description)}</small></label>`).join('')}</fieldset>${extensions.preview(aux.edition||'classic')}<div class="mode-choices"><button data-ui="start" data-mode="solo" class="primary">我和三位 AI 伙伴<small style="color:#e1e9d8">我来控制 MooMoo · 推荐</small></button><button data-ui="start" data-mode="table">四位朋友轮流玩<small>共用这个屏幕 · 四只狗狗都由人操作</small></button></div><p class="empty" style="margin-top:15px">保留东海道标准版玩法 · 四段旅程 · 10 种旅行能力<br>自动存档，无需登录。音乐可随时开关。</p>`,aux.kind==='new'?'<button data-ui="close">继续原来的旅行</button>':'',{dog:0,row:3,close:aux.kind==='new',label:'KYOTO → EDO / FOUR PAIRS OF PAWS'});
+   html=shell(aux.kind==='new'?'再出发一次？':'和我去散步吧！',pack.welcome,`<div class="note-box">不用掷骰子，也不用抢着到终点。<br><b>走在最后的狗狗先行动，收集旅途中最多的快乐。</b></div>${aux.kind==='new'?'<p class="dialog-copy">开始新的旅行会替换当前这局的本地存档。</p>':''}${mapPicker()}<fieldset class="edition-picker"><legend>这次怎么玩？</legend>${extensions.editions().map(e=>`<label><input type="radio" name="edition" data-ui="edition" data-id="${esc(e.id)}" value="${esc(e.id)}" ${(aux.edition||'classic')===e.id?'checked':''}>${esc(e.name)}<small>${esc(e.description)}</small></label>`).join('')}</fieldset>${extensions.preview(aux.edition||'classic')}<div class="mode-choices"><button data-ui="start" data-mode="solo" class="primary">我和三位 AI 伙伴<small style="color:#e1e9d8">我来控制 MooMoo · 推荐</small></button><button data-ui="start" data-mode="table">四位朋友轮流玩<small>共用这个屏幕 · 四只狗狗都由人操作</small></button></div><p class="empty" style="margin-top:15px">保留东海道标准版玩法 · 四段旅程 · 10 种旅行能力<br>自动存档，无需登录。音乐可随时开关。</p>`,aux.kind==='new'?'<button data-ui="close">继续原来的旅行</button>':'',{dog:0,row:3,close:aux.kind==='new',label:pack.eyebrow});
   }else if(aux.kind==='rules')html=rulesHTML(aux.page||0);
-  else if(aux.kind==='scenery'){const leg=aux.id;html=shell(`我在${REGIONS[leg].name}看风景`, '汪！我是 MooMoo。歇歇小爪子，我来讲讲这幅画里的小美好～',mapStoryHTML(leg),'<button class="primary" data-ui="close">听完啦，跟我回去吧 🐾</button>',{dog:0,row:3,close:true,label:`卷 ${leg+1} / 4 · ${LEG_NAMES[leg]}`});}
+  else if(aux.kind==='scenery'){const leg=aux.id;html=shell(`我在${getMapPack().regions[leg].name}看风景`, '汪！我是 MooMoo。歇歇小爪子，我来讲讲这幅画里的小美好～',mapStoryHTML(leg),'<button class="primary" data-ui="close">听完啦，跟我回去吧 🐾</button>',{dog:0,row:3,close:true,label:`卷 ${leg+1} / 4 · ${LEG_NAMES[leg]}`});}
   else if(aux.kind==='collection')html=collectionHTML(aux.id??0);
   else if(aux.kind==='map')html=shell('把一路的风景摊开','四段旅程，每座驿站都要等齐小伙伴。数字就是棋盘上的地点编号。',`${mapAtlasHTML()}<div class="map-list">${LEG_NAMES.map((n,i)=>`<section><h3>${i+1} · ${n}</h3><p>${INN_NAMES[i]} → ${INN_NAMES[i+1]}</p><div>${BOARD.slice(INNS[i]+1,INNS[i+1]+1).map(b=>`<span style="border-color:${TYPES[b.type].color}55">${b.id} ${TYPES[b.type].icon} ${b.type==='inn'?'驿站':b.name}${b.capacity===2?' ②':''}</span>`).join('')}</div></section>`).join('')}</div><p class="empty">② 表示双人停靠位。到了下一座驿站之前，我不能越过它。</p>`,'',{dog:0,close:true});
   else if(aux.kind==='journal')html=shell('一路的小小回忆','每次停靠，我都认真记在手账里啦。',`<div class="log-full">${s?.log.length?s.log.map(l=>`<article><strong>${l.dog<0?'伙伴集合':DOGS[l.dog].name} · ${esc(l.title)}</strong><p>${esc(l.text)}</p></article>`).join(''):'<p class="empty">还没有足迹，先去第一站看看吧。</p>'}</div>`,'',{dog:0,close:true});
@@ -78,7 +86,7 @@ function renderModal(){if(moving)return;let html='',key='';const p=s?current(s):
   else html=shell('小伙伴在整理背包',`${DOGS[p.id].name} 正在选择自己的旅行能力。`,'<div class="ai-progress"></div>');
  }else if(s?.phase==='choice'){
   key=`choice-${s.turn}-${p.id}-${s.pending.type}`;
-  if(p.human)html=choiceHTML();else html=shell(`${DOGS[p.id].name} 在${s.lastTitle.split(' · ').pop()}`,s.notes.at(-1)||'我想想，选哪个比较好呢？','<div class="ai-progress"></div>');
+  if(p.human)html=choiceHTML();else html=shell(`${DOGS[p.id].name} 在${themeText(s.lastTitle).split(' · ').pop()}`,s.notes.at(-1)||'我想想，选哪个比较好呢？','<div class="ai-progress"></div>');
  }else if(s?.phase==='notice'){
   key=`notice-${s.turn}`;
   html=shell(s.lastTitle,`${DOGS[p.id].name} 的小小收获`,`<div class="dialog-copy">${s.notes.map(n=>`<p>${esc(n)}</p>`).join('')}</div><div class="stat-line"><span>我有 <b>◉ ${p.cash} 币</b></span><span>旅途分 <b>${p.score}</b></span>${BOARD[p.pos].type==='inn'?'<span>到齐后，最后抵达的狗狗先出发</span>':''}</div>${p.human?'':'<div class="ai-progress"></div>'}`,p.human?'<button class="primary" data-ui="ack">记进手账，继续旅行 →</button>':'',{row:BOARD[p.pos].type==='inn'?7:8});
@@ -86,7 +94,7 @@ function renderModal(){if(moving)return;let html='',key='';const p=s?current(s):
  const dialog=$('#modal');
  if(html){const active=document.activeElement;const focusId=active?.dataset?.id,focusUi=active?.dataset?.ui;$('#modal-content').innerHTML=html;if(!dialog.open){lastFocus=document.activeElement;const savedScroll=window.scrollY;dialog.showModal();window.scrollTo(0,savedScroll);}if(key!==dialogKey){dialog.scrollTop=0;dialogKey=key;}else if(focusUi){[...dialog.querySelectorAll('[data-ui]')].find(el=>el.dataset.ui===focusUi&&el.dataset.id===focusId)?.focus({preventScroll:true});}
  }else{if(dialog.open)dialog.close();dialogKey='';}
- updatePurchase();positionDialog();animateSprites();
+ themeDOM($('#modal-content'));updatePurchase();positionDialog();animateSprites();
 }
 function positionDialog(){const d=$('#modal');if(!d.open)return;const b=$('.journey').getBoundingClientRect(),w=document.documentElement.clientWidth,h=window.innerHeight;d.style.margin='0';d.style.position='fixed';const r=d.getBoundingClientRect();d.style.left=`${Math.max(14,Math.min(w-r.width-14,b.left+b.width/2-r.width/2))}px`;d.style.top=`${Math.max(18,Math.min(h-r.height-18,(Math.max(0,b.top)+Math.min(h,b.bottom)-r.height)/2))}px`;}
 window.addEventListener('resize',positionDialog);
@@ -126,17 +134,17 @@ function endScoreCard(p){const detail=scoreBreakdown(p,s.players),awards=detail.
 </dl><div class="score-total"><span>把每一份快乐加起来</span><strong>${detail.total} 分</strong></div><button class="text-button" data-ui="player" data-id="${p.id}">翻开我的收藏明细 ↗</button></div></details>`;}
 function scheduleAI(){clearTimeout(aiTimer);if(moving||!s||aux||s.ended||current(s).human)return;aiTimer=setTimeout(()=>{if(moving||!s||aux||current(s).human||s.ended)return;dispatch(aiAction(s));},fast?260:s.phase==='notice'?1600:1050);}
 function openAux(next){clearTimeout(aiTimer);if(aux?.kind==='rules'&&next.kind==='rules')return;next.back=aux;aux=next;renderModal();}
-function closeAux(){aux=aux?.back||null;renderModal();scheduleAI();if(!$('#modal').open)lastFocus?.focus?.({preventScroll:true});}
+function closeAux(){aux=aux?.back||null;render();if(!$('#modal').open)lastFocus?.focus?.({preventScroll:true});}
 $('#modal').addEventListener('cancel',e=>{e.preventDefault();if(aux&&aux.kind!=='welcome')closeAux();});
 document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.matches('[role="button"][data-ui="player"]'))e.target.click();});
-document.addEventListener('change',e=>{if(e.target.dataset.ui==='edition'){aux.edition=e.target.value;renderModal();return;}if(e.target.dataset.ui==='gift'){const id=e.target.dataset.id;selected=e.target.checked?[...selected,id]:selected.filter(v=>v!==id);e.target.closest('.choice').classList.toggle('selected',e.target.checked);updatePurchase();}});
+document.addEventListener('change',e=>{if(e.target.dataset.ui==='map-pack'){aux.mapPack=e.target.value;render();return;}if(e.target.dataset.ui==='edition'){aux.edition=e.target.value;renderModal();return;}if(e.target.dataset.ui==='gift'){const id=e.target.dataset.id;selected=e.target.checked?[...selected,id]:selected.filter(v=>v!==id);e.target.closest('.choice').classList.toggle('selected',e.target.checked);updatePurchase();}});
 document.addEventListener('click',e=>{const el=e.target.closest('[data-ui]');if(!el||moving)return;const ui=el.dataset.ui,id=el.dataset.id;
  switch(ui){
  case'rules':openAux({kind:'rules',page:0});break;
  case'rule-page':aux.page=Number(id);renderModal();break;
  case'new':openAux({kind:'new'});break;
  case'close':closeAux();break;
- case'start':clearTimeout(aiTimer);window.scrollTo(0,0);s=newGame(Date.now(),el.dataset.mode,aux?.edition||'classic');aux=null;selected=[];save();render();break;
+ case'start':{const chosenMap=shownMapId();clearTimeout(aiTimer);window.scrollTo(0,0);s=newGame(Date.now(),el.dataset.mode,aux?.edition||'classic');s.presentation={mapPack:chosenMap,mapVersion:getMapPack(chosenMap).version};aux=null;selected=[];save();render();break;}
  case'speed':fast=!fast;render();break;
  case'collection':openAux({kind:'collection',id:0});break;
  case'score-detail':{const card=$('.end-score-card[data-score-dog="'+id+'"]');if(card){document.querySelectorAll('.end-score-card').forEach(el=>el.open=el===card);positionDialog();card.scrollIntoView({block:'start',behavior:'instant'});}break;}

@@ -1,0 +1,9 @@
+{
+  "policy": "Preserved originals. Never overwrite; save future revisions to a new versioned directory.",
+  "files": {
+    "01-boston-newport.png": "181faafcc6e49ff5c739865c04c29a9f2b087acb5aa08a801fe01902b35ffb0a",
+    "02-newport-new-york.png": "1faf113836d3e1f55b536cc5f0ef375eb58d1b0e3f89ae650be223d2e94c84e6",
+    "03-new-york-philadelphia.png": "0361792664f17c1cc2508de47ea939c08703f46243496b3aa405d660cc5c1414",
+    "04-philadelphia-washington.png": "009e85f7853bd884f1eca76e0aae99a5cea772b9509d10649dc38e5f234442b8"
+  }
+}
