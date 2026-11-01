@@ -1,8 +1,36 @@
+# OS and editor files
 .DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Dependencies, caches, and logs
 node_modules/
 __pycache__/
 *.py[cod]
 *.log
+coverage/
+.cache/
+
+# Local configuration and credentials (never commit private keys)
 .env
 .env.*
 !.env.example
+.npmrc
+.netrc
+.git-credentials
+.ssh/
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# Locally packaged downloads; attach releases separately when needed
+*.zip
+/releases/
+
+# dist/ contains the actual game source; artifacts/ contains QA evidence.
+# Both directories intentionally remain tracked.
