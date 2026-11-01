@@ -14,7 +14,7 @@ for(const draft of (process.argv[3]?[process.argv[3]]:['production','varied'])){
   const results={};
   for(const edition of ['classic','wishes']){
    let s=newGame(Math.imul(seed,2654435761),'solo',edition),actions=0;
-   while(!s.ended&&actions++<700){const p=s.players[s.current];const action=s.phase==='draft'&&draft==='varied'?{type:'role',id:p.draft[((seed*1103515245+p.id*12345)>>>8)%2]}:aiAction(draft==='unaware'?{...s,edition:'classic'}:s);s=act(s,action);}
+   while(!s.ended&&actions++<700){const p=s.players[s.current];const action=s.phase==='draft'&&draft==='varied'?{type:'role',id:p.draft[((seed*1103515245+p.id*12345)>>>8)%2]}:aiAction(s,{useExtensions:draft!=='unaware'});s=act(s,action);}
    if(!s.ended||!validateSave(s))throw Error(`Invalid match ${draft}/${edition}/${seed}`);
    results[edition]=s;
    for(const p of s.players){if(scoreBreakdown(p,s.players).total!==p.score)throw Error('Ledger mismatch');const win=s.winners.includes(p.id)?1/s.winners.length:0;const record=r=>{r.games++;r.wins+=win;r.score+=p.score;r.complete+=Number(wishProgress(p)?.complete||false);r.bonus+=p.ledger.wishes||0;};record(batch[edition][p.id]);const key=`${p.id}/${p.role}`;batch.roles[key]??={dog:DOGS[p.id].name,role:ROLE[p.role].name,classic:stats(),wishes:stats()};record(batch.roles[key][edition]);}

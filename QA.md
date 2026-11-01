@@ -213,3 +213,12 @@ Yuki 在主动 AI 下平均总分 73.66，喜好完成率 77.7%，平均奖励 3
 - 390×844 验证：页面 scrollWidth=clientWidth=390，弹窗宽352、内部scrollWidth350，无横向溢出；窄屏工具栏入口可见。已恢复原视口。
 - node --check dist/app.js 和 dist/map.js 通过。此为介绍界面修改，未新增规则测试或重跑平衡模拟。
 - 截图：artifacts/moomoo-scenery-guide.png、artifacts/moomoo-scenery-mobile.png。
+# DLC 结构重组验证（2026-11-01）
+
+- 基线：本地 Git `v1.0.0`，提交 `e5c02aa8555fcecd79cdfcb301bd220643cb6e3e`。重构分支 `refactor/dlc-modules`；保留原标签，未发布。
+- `npm test`：46 项通过，包含原有 38 项与 8 项扩展边界测试。
+- `npm run compare:refactor -- 1000 v1.0.0`：生产 AI / 不追求心愿的 AI，各 1,000 局经典和 1,000 局心愿版，共 4,000 组新旧版本对照。723,413 次行动的 AI 选择及完整玩法状态一致，21,031 次参考版本存档续玩一致，最终排名、得分分项和解释文案一致。报告见 `artifacts/dlc-refactor-comparison.json`。
+- 对比仅排除新增 `extensions` 版本清单，以及分数展示行的 `featured` 标记。历史 Yuki 条件与奖励由原有心愿测试覆盖。
+- 临时安装中实际移除心愿目录，经典版仍完成完整对局；缺包时保留经典版并返回清晰错误。另一个测试专用农庄扩展只增加目录和清单，即可参与事件、计分、AI 和展示，未改核心源码。
+- 浏览器验证：原 `127.0.0.1:4175` 经典版存档成功恢复，没有推进或替换；使用独立 `localhost:4175` 存储验证心愿版选项、四只狗的奖励预览、MooMoo 心愿规则页、角色选择、AI 行动、刷新续玩及 Yuki 三幅画卷进度。浏览器无 error / warn 日志。
+- 心愿包独立 ZIP 打包验证：6 个脚本文件，共 5,616 字节；不含共享素材。安装及版本兼容说明见 `docs/extensions.md`。ZIP 只生成在临时目录，未上传。

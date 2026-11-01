@@ -1,0 +1,8 @@
+import {DOGS} from '../../data.js';
+import {WISHES,wishProgress} from './rules.js';
+export function card(p,{score=false,ended=false}={}){const w=wishProgress(p);if(!w)return '';return `<section class="wish-card ${w.claimed?'complete':''}" ${score?`data-score-key="wishes" data-score-value="${p.ledger.wishes||0}"`:''}><h3>${w.icon} ${w.name}<b>${w.claimed?'完成 +'+w.points+' 分':w.count+'/'+w.target+' · 目标 +'+w.points+' 分'}</b></h3><p>${w.text}</p><progress value="${w.count}" max="${w.target}" aria-label="${DOGS[p.id].name} 的喜好进度"></progress><small>${w.claimed?'我的小心愿实现啦！奖励已计入总分。':w.missed?'我落下一顿饭啦，这次心愿没能完成。':ended?'这次还差一点点，下次旅行再来努力呀。':'我在认真收集喜欢的小快乐！'}</small>${w.scenery?`<div class="wish-checks">${w.scenery.map(c=>`<span>${c.count===c.target?'✓':'○'} ${c.name} ${c.count}/${c.target}</span>`).join('')}</div>`:''}${p.id===0?`<div class="wish-checks">${[14,27,41].map((id,i)=>`<span>${p.wish.meals.includes(id)?'✓':p.pos>id?'×':'○'} 第 ${i+1} 顿</span>`).join('')}</div>`:''}</section>`;}
+export function preview(){return `<div class="wish-preview">${WISHES.map((w,i)=>`<p><b>${w.icon} ${DOGS[i].name} · ${w.name} · +${w.points} 分</b><span>${w.text}</span></p>`).join('')}</div>`;}
+export function mini(p){const w=wishProgress(p);return w?`<div class="wish-mini">${w.icon} ${w.name} · ${w.count}/${w.target}${w.claimed?' ✓':''}</div>`:'';}
+export const rulePages=[
+ {name:'狗狗的小心愿',title:'我是大馋丫头，开饭可不能忘！',row:7,tip:'经典版没有喜好奖励；选狗狗能力扩展版，我和伙伴就都有一个专属的小心愿啦。',body:`<p>开局我可以选<b>经典版</b>，也可以选<b>狗狗能力扩展版</b>。两种都保留十种旅行能力，扩展版会再加上我们各自的喜好！</p>${WISHES.map((w,i)=>`<p><b>${w.icon} 我是 ${DOGS[i].name}，${w.name}：</b>${w.text}完成后我额外获得 <b>${w.points} 分</b>。</p>`).join('')}<p>我的心愿奖励只领一次，不比谁先完成，也不和伙伴抢名额。奖励会立即计入总分，结算时放在成就旁边；它不是成就卡，不增加平分时的成就数，也不触发泡汤老行家的额外 1 分。</p>`},
+];
