@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="68" viewBox="0 0 80 48"><title>普罗维登斯触手藏书票</title><defs><path id="paw" d="M-5 3Q0-5 5 3T0 8Q-7 8-5 3M-7-1a2 3 0 1 0 0-.1M-2-5a2 3 0 1 0 0-.1M4-4a2 3 0 1 0 0-.1" />
+  <g id="book" fill="#527e73"><path d="M12 10q14-4 28 2 14-6 28-2v29q-13-4-28 1-15-5-28-1z" /><path d="M17 12q12-2 23 3 12-5 23-3v22q-12-3-23 2-11-4-23-2z" fill="#f4dfae" /></g>
+ </defs><rect width="80" height="48" rx="4" fill="#fffaf0" /><use href="#book" /><path d="M12 42q27-5 10-15-6-5 2-9t5 6" fill="none" stroke="#468879" stroke-width="5" /><use href="#paw" transform="translate(54 24) scale(.7)" fill="#89694e" /></svg>

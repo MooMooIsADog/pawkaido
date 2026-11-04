@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="68" viewBox="0 0 80 48"><title>巴尔的摩小蓝蟹饭</title><defs><path id="bowl" d="M7 25Q8 43 39 44T73 25Z" fill="#74b3a5" stroke="#305c59" stroke-width="2" />
+  <g id="grain" fill="#e7b463"><ellipse cx="28" cy="21" rx="9" ry="5" /><ellipse cx="41" cy="20" rx="10" ry="6" /><ellipse cx="55" cy="23" rx="8" ry="4" /></g>
+  <g id="reds" fill="#bc7562"><rect x="23" y="17" width="12" height="7" rx="3" /><rect x="41" y="15" width="10" height="6" rx="2" /><rect x="51" y="21" width="7" height="5" rx="1" /></g>
+  <g id="blue-crab" fill="#579bab" stroke="#325a68" stroke-width="2"><ellipse cx="41" cy="29" rx="14" ry="8" /><path d="m29 28-8-4-6-8 2-7 5 6 6-3-2 9 5 3m20 4 8-4 6-8-2-7-5 6-6-3 2 9-5 3M28 31l-9 4m10-1-8 7m31-10 10 4m-11-1 8 7" /></g>
+  </defs><rect width="80" height="48" rx="4" fill="#fffaf0" /><use href="#grain" /><use href="#reds" /><use href="#bowl" /><use href="#blue-crab" transform="translate(24 23) scale(.4)" /></svg>
