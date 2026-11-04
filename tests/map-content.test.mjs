@@ -45,7 +45,7 @@ test('legacy saves use Japan and unavailable themes fall back without mutating s
 });
 test('theme prose covers events, cards, achievements and wishes without modifying source text',()=>{
  const p=getMapPack('east-coast'),text='京都 · 小爪出发屋：稻田嗅嗅，江户，犬守神社，稻田 3/3，富士爪印画';
- assert.equal(themeText(text,p),'波士顿 · 金顶出发屋：绿野明信片，华盛顿，汪汪爱心站，绿野 3/3，灯塔爪印画');
+ assert.equal(themeText(text,p),'波士顿 · 金顶出发屋：绿野明信片，华盛顿，汪汪爱心站，绿野 3/3，独立钟楼剪纸画');
  assert.equal(themeText(text,getMapPack('japan')),text);
  setMapPack('east-coast');assert.match(mapStoryHTML(0),/洛夫克拉夫特/);assert.match(mapStoryHTML(3),/爱伦·坡/);assert.match(mapStoryHTML(3),/黑猫/);assert.match(mapAtlasHTML(),/04-philadelphia-washington.webp/);setMapPack('japan');
 });

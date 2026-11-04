@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <path id="bowl" d="M7 25Q8 43 39 44T73 25Z" fill="#74b3a5" stroke="#305c59" stroke-width="2"/>
+  <path id="paw" d="M-5 3Q0-5 5 3T0 8Q-7 8-5 3M-7-1a2 3 0 1 0 0-.1M-2-5a2 3 0 1 0 0-.1M4-4a2 3 0 1 0 0-.1"/>
+  <g id="grain" fill="#e7b463"><ellipse cx="28" cy="21" rx="9" ry="5"/><ellipse cx="41" cy="20" rx="10" ry="6"/><ellipse cx="55" cy="23" rx="8" ry="4"/></g>
+  <g id="reds" fill="#bc7562"><rect x="23" y="17" width="12" height="7" rx="3"/><rect x="41" y="15" width="10" height="6" rx="2"/><rect x="51" y="21" width="7" height="5" rx="1"/></g>
+  <g id="blue-crab" fill="#579bab" stroke="#325a68" stroke-width="2"><ellipse cx="41" cy="29" rx="14" ry="8"/><path d="m29 28-8-4-6-8 2-7 5 6 6-3-2 9 5 3m20 4 8-4 6-8-2-7-5 6-6-3 2 9-5 3M28 31l-9 4m10-1-8 7m31-10 10 4m-11-1 8 7"/></g>
+  <g id="book" fill="#527e73"><path d="M12 10q14-4 28 2 14-6 28-2v29q-13-4-28 1-15-5-28-1z"/><path d="M17 12q12-2 23 3 12-5 23-3v22q-12-3-23 2-11-4-23-2z" fill="#f4dfae"/></g>
+ </defs>
+ <symbol id="g0-0" viewBox="0 0 80 48"><circle cx="40" cy="24" r="20" fill="#fff3d8" stroke="#486457" stroke-width="2"/><path d="M25 10q23 9 3 30m26-30q-23 11-4 31" fill="none" stroke="#b04f43" stroke-width="3" stroke-dasharray="4 2"/></symbol>
+ <symbol id="g0-1" viewBox="0 0 80 48"><path d="M16 35q12-8 13-22t21 0q1 13 14 22z" fill="#bc965f" stroke="#554e43" stroke-width="2"/><path d="m41 14-4 9 5 2-5 10" fill="none" stroke="#554e43" stroke-width="3"/><circle cx="45" cy="41" r="4" fill="#ab6949"/></symbol>
+ <symbol id="g0-2" viewBox="0 0 80 48"><ellipse cx="40" cy="24" rx="24" ry="15" fill="none" stroke="#b97844" stroke-width="12"/><path d="m23 12 3 2m10-6 2 3m12-2 1 3m7 4 3 1" stroke="#f9da87" stroke-width="3"/></symbol>
+ <symbol id="g0-3" viewBox="0 0 80 48"><path id="rope" d="M5 34C28 30 20 3 40 12S63 41 46 37 17 21 32 15 58 31 75 11" fill="none" stroke="#427b91" stroke-width="8"/><use href="#rope" stroke-dasharray="4 5" style="stroke:#fff0ce"/></symbol>
+ <symbol id="g0-4" viewBox="0 0 80 48"><path d="M7 24l11-3 8-12h24l11 13 11 3v11H7z" fill="#efb544" stroke="#534e43" stroke-width="2"/><path d="m29 13-6 9h15v-9zm13 0v9h13l-7-9z" fill="#548b91"/><g fill="#454e48"><circle cx="22" cy="35" r="6"/><circle cx="59" cy="35" r="6"/></g></symbol>
+ <symbol id="g0-5" viewBox="0 0 80 48"><use href="#blue-crab"/></symbol>
+ <symbol id="g1-0" viewBox="0 0 80 48"><path d="M21 34c0-27 23-33 20-11s-24 24-25 4 13-23 25-7 25 26 24 8-16-26-23-10l-15 21m11-20 18 21" fill="none" stroke="#c38146" stroke-width="6" stroke-linecap="round"/></symbol>
+ <symbol id="g1-1" viewBox="0 0 80 48"><path d="m12 28 33-18 22 6-33 19zm4 7 20 5 30-17" fill="#dab365" stroke="#9c7043" stroke-width="2"/><g fill="#eac647"><circle cx="52" cy="10" r="3"/><circle cx="60" cy="9" r="3"/></g></symbol>
+ <symbol id="g1-2" viewBox="0 0 80 48"><path d="M12 5h35l-2 34H15z" fill="#e0ba81"/><path d="M20 20q8-12 15 0-7 10-15 0l-5 4v-8z" fill="#48838b"/><g fill="#c29771"><rect x="47" y="26" width="12" height="8" rx="3"/><rect x="56" y="36" width="11" height="7" rx="3"/></g></symbol>
+ <symbol id="g1-3" viewBox="0 0 80 48"><g fill="#bd714f" stroke="#8b5441"><rect x="10" y="25" width="18" height="11" rx="3"/><rect x="30" y="19" width="18" height="11" rx="3"/><rect x="50" y="13" width="18" height="11" rx="3"/></g></symbol>
+ <symbol id="g1-4" viewBox="0 0 80 48"><path d="M18 16q-9 13 6 23 7 3 12-1 8 4 15-6 8-18-7-19-9 0-12 3-8-6-14 0" fill="#c76850"/><path d="M30 14q0-9 10-11" fill="none" stroke="#577749" stroke-width="4"/><path d="m50 28 10-5 8 6-10 6zm-5 10 11-5 8 5-10 6z" fill="#f0cb8d"/></symbol>
+ <symbol id="g1-5" viewBox="0 0 80 48"><rect x="15" y="10" width="49" height="29" rx="10" fill="#9385a1"/><use href="#paw" transform="translate(40 22) scale(1.3)" fill="#554e70"/></symbol>
+ <symbol id="g2-0" viewBox="0 0 80 48"><path d="m10 10 60 1-33 31z" fill="#82b2bb"/><g fill="#ebc4c0"><circle cx="31" cy="16" r="4"/><circle cx="39" cy="23" r="4"/><circle cx="48" cy="16" r="3"/></g></symbol>
+ <symbol id="g2-1" viewBox="0 0 80 48"><path d="M28 16Q26-4 42 4q12 3 11 13l14 11-9 8-6-5 2 12H24l2-14-9 6-6-9z" fill="#e8b349" stroke="#856842" stroke-width="2"/><path d="m34 11-4-4m15 4 4-5M39 19v21" stroke="#846738" stroke-width="3"/></symbol>
+ <symbol id="g2-2" viewBox="0 0 80 48"><path d="M13 29q1-22 23-22 21 1 20 22z" fill="#58846c"/><path d="M12 29q17 0 36-5 12-3 23 4-9 9-36 9z" fill="#335a4b"/></symbol>
+ <symbol id="g2-3" viewBox="0 0 80 48"><path d="M23 5h9q8 15 16 0h9v26q-3 16-18 14-16 0-16-14z" fill="#e7d7b0"/><use href="#blue-crab" transform="translate(14 8) scale(.63)"/></symbol>
+ <symbol id="g2-4" viewBox="0 0 80 48"><rect x="13" y="9" width="53" height="32" rx="7" fill="#57867d"/><path d="m17 33 13-13 20 0 9-7m-39 14 13 0 12 9h14" fill="none" stroke="#e9be65" stroke-width="3"/><use href="#paw" transform="translate(61 14) scale(.6)" fill="#fff3cf"/></symbol>
+ <symbol id="g2-5" viewBox="0 0 80 48"><path d="m26 6 8 1 6 10 7-10 8-1q-4 12 5 16l-4 18H24l-4-18q10-7 6-16" fill="#d9914d"/><path d="m24 24 14 4-15 1m33-8-14 6 15-2m-4 8-14 4 14-1" fill="#484b44"/></symbol>
+ <symbol id="g3-0" viewBox="0 0 80 48"><use href="#book"/><path d="M12 42q27-5 10-15-6-5 2-9t5 6" fill="none" stroke="#468879" stroke-width="5"/><use href="#paw" transform="translate(54 24) scale(.7)" fill="#89694e"/></symbol>
+ <symbol id="g3-1" viewBox="0 0 80 48"><path d="m13 34 40-3 12 6-41 5z" fill="#82614e"/><path d="M26 32q-4-8 8-14 2-14 14-12l6 5 10 2-11 3q-1 13-14 14l-11 8 3-9z" fill="#374b50"/><circle cx="47" cy="10" r="1" fill="#fff1bb"/></symbol>
+ <symbol id="g3-2" viewBox="0 0 80 48"><path d="M13 17 23 8l36-2 9 10z" fill="#a05f45"/><path d="M16 23h49v17H16z" fill="#dfbc83"/><path d="M14 21h52" stroke="#724d38" stroke-width="3"/><path d="M23 27v9m8-9v9m9-9v9m9-9v9m8-9v9" stroke="#fff0c9" stroke-width="4"/></symbol>
+ <symbol id="g3-3" viewBox="0 0 80 48"><use href="#bowl"/><path d="M22 19v14m34-14v14m-34-13q16 17 34 0m-24 6v6m13-6v6" fill="none" stroke="#39647b" stroke-width="2"/></symbol>
+ <symbol id="g3-4" viewBox="0 0 80 48"><path d="M12 24h55v15H12z" fill="#af6954"/><path d="m32 23 2-12h11l2 12z" fill="#fff1d5"/><path d="m32 11 8-8 8 8z" fill="#577767"/><circle cx="40" cy="16" r="2" fill="#7a776b"/><path d="M18 28h6m31 0h6M18 34h6m31 0h6" stroke="#fff1d5" stroke-width="3"/></symbol>
+ <symbol id="g3-5" viewBox="0 0 80 48"><path d="m37 21 2-17 2-3 3 20" fill="#bcac8b"/><path d="m31 22 19 0 10 20H21z" fill="#9abfc1"/><g fill="#946245"><path id="pup" d="m11 35 3-9 0-6 3 2 4-1 2-3 1 7 3 10z"/><use href="#pup" x="14" fill="#617d86"/><use href="#pup" x="28" fill="#d19b52"/><use href="#pup" x="42" fill="#5c6959"/></g></symbol>
+ <symbol id="f0" viewBox="0 0 80 48"><ellipse cx="40" cy="22" rx="22" ry="12" fill="#dca452"/><use href="#paw" transform="translate(40 19)" fill="#a46d3e"/><use href="#bowl"/></symbol>
+ <symbol id="f1" viewBox="0 0 80 48"><path d="m6 15 13-12 15 12z" fill="#e6b346"/><path d="M19 14v11" stroke="#675e45" stroke-width="2"/><use href="#grain"/><use href="#bowl"/></symbol>
+ <symbol id="f2" viewBox="0 0 80 48"><ellipse cx="40" cy="25" rx="31" ry="8" fill="#edd1a1"/><use href="#grain"/><use href="#bowl"/><path d="m37 28-7 9h7zm2 0v9h8z" fill="#fff3d9"/></symbol>
+ <symbol id="f3" viewBox="0 0 80 48"><path d="m16 22 41-15-9 20z" fill="#dbb079" stroke="#aa8154" stroke-width="2"/><use href="#bowl"/></symbol>
+ <symbol id="f4" viewBox="0 0 80 48"><ellipse cx="40" cy="23" rx="27" ry="7" fill="#efcd89"/><use href="#bowl"/><path d="M30 35q1-9 10-10 10 2 11 10zm2 2h17" fill="#f6c35f"/></symbol>
+ <symbol id="f5" viewBox="0 0 80 48"><ellipse cx="40" cy="18" rx="19" ry="8" fill="none" stroke="#db9785" stroke-width="8"/><use href="#bowl"/></symbol>
+ <symbol id="f6" viewBox="0 0 80 48"><use href="#grain"/><use href="#reds"/><path d="M12 24h55l-6 17H20z" fill="#b47652"/><path d="M13 26q-12-4-5 5l9 2m48-7q14-4 8 5l-10 2" fill="none" stroke="#9b694c" stroke-width="3"/></symbol>
+ <symbol id="f7" viewBox="0 0 80 48"><use href="#grain"/><path d="m4 22 68 1-14 17H23z" fill="#7c9d91"/><path d="M17 28h47" stroke="#f5db9e" stroke-width="2"/></symbol>
+ <symbol id="f8" viewBox="0 0 80 48"><use href="#reds"/><path d="m18 18 6-7 8 5-6 6zm24-3 6-7 9 6-6 5z" fill="#edb270"/><use href="#bowl"/></symbol>
+ <symbol id="f9" viewBox="0 0 80 48"><path d="m16 20 24-10 6 4-24 12zm13 2 24-10 6 5-25 11zm12 2 21-8 5 6-23 9z" fill="#af7963"/><use href="#bowl"/></symbol>
+ <symbol id="f10" viewBox="0 0 80 48"><use href="#grain"/><use href="#reds"/><use href="#bowl"/><use href="#blue-crab" transform="translate(24 23) scale(.4)"/></symbol>
+ <symbol id="f11" viewBox="0 0 80 48"><use href="#reds"/><path d="m5 21 67 2-14 17H21z" fill="#6297a2"/><path d="m23 24 2-15 11 14z" fill="#ffedcd"/></symbol>
+ <symbol id="f12" viewBox="0 0 80 48"><path d="M9 5h62l-5 7H14z" fill="#edd5aa"/><path d="M15 5h7v7h-7zm17 0h7v7h-7zm18 0h7v7h-7z" fill="#bc6b54"/><circle cx="29" cy="22" r="7" fill="#b17d63"/><path d="M44 24q2-14 15-5z" fill="#a6755b"/><use href="#bowl"/></symbol>
+ <symbol id="f13" viewBox="0 0 80 48"><path d="M23 24q0-34 34 0" fill="none" stroke="#ab764e" stroke-width="4"/><g stroke="#846950"><rect x="13" y="13" width="13" height="14" rx="3" fill="#bd8462"/><rect x="27" y="12" width="13" height="14" rx="3" fill="#7c9da6"/><rect x="41" y="12" width="13" height="14" rx="3" fill="#d2a761"/><rect x="55" y="14" width="13" height="14" rx="3" fill="#84917a"/></g><path d="M9 25h62l-6 17H16z" fill="#c69960"/><path d="M17 30h48m-44 6h41m-36-9 3 14m8-14 2 14m8-14-1 14m10-14-3 14" stroke="#ac794f" stroke-width="2"/></symbol>
+</svg>

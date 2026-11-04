@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>美东卡面图鉴 · 汪汪东海道</title>
+  <style>
+    :root { color-scheme:light; font-family:system-ui,sans-serif; color:#233f3b; background:#f7f1df }
+    * { box-sizing:border-box }
+    body { margin:0; border-top:6px solid #bc654b }
+    main { max-width:1160px; margin:auto; padding:clamp(18px,4vw,48px) }
+    header { border-bottom:2px solid #39605a; padding-bottom:20px }
+    .route { margin:0; font-size:12px; font-weight:750; color:#8a4735; letter-spacing:.12em }
+    h1,h2 { font-family:ui-serif,Georgia,"Songti SC",serif }
+    h1 { margin:8px 0; font-size:clamp(32px,5vw,55px); line-height:1.2 }
+    header p:last-child { margin:0; color:#52635b }
+    nav { display:flex; gap:8px; flex-wrap:wrap; padding:16px 0 }
+    nav a { color:#2c5953; text-decoration:none; border:1px solid #aebeb0; border-radius:4px; padding:5px 12px }
+    nav a:hover, nav a:focus-visible { background:#e1eadd; border-color:#39605a }
+    section { margin:18px 0 32px; scroll-margin-top:12px }
+    h2 { display:flex; gap:10px; align-items:baseline; margin:0 0 12px; font-size:23px }
+    h2 small { font:500 13px system-ui,sans-serif; color:#58685d }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(145px,100%),1fr)); gap:9px }
+    figure { margin:0; background:#fffaf0; border:1px solid #d1c8ae; border-radius:6px; padding:8px; text-align:center }
+    svg { display:block; margin:auto; width:100%; max-width:150px; height:84px }
+    figcaption { border-top:1px dotted #c9bda1; padding:8px 0 2px; font-size:14px; font-weight:650; overflow-wrap:anywhere }
+    @media (max-width:500px) { .grid { grid-template-columns:repeat(2,minmax(0,1fr)) } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="route" lang="en">PAWKAIDO &nbsp; / &nbsp; BOSTON → WASHINGTON, DC</p>
+      <h1>美东卡面图鉴</h1>
+      <p id="summary"></p>
+    </header>
+    <nav aria-label="跳到类别"></nav>
+    <div id="gallery"></div>
+  </main>
+  <script type="module">
+    import {FAMILIES, GIFTS, FOODS} from '../../data.js';
+    import pack from './index.js';
+
+    const sprite = new URL(pack.cardArt, new URL('../../', import.meta.url));
+    const groups = FAMILIES.map((family, index) => ({
+      id: 'gifts-' + index, title: family.name, items: GIFTS.filter(gift => gift.family === index)
+    }));
+    groups.push({id:'meals', title:'驿站鲜食', items:FOODS});
+    document.querySelector('#summary').textContent =
+      `MooMoo 的东海岸旅行收藏 · ${GIFTS.length} 件伴手礼，${FOODS.length} 道鲜食`;
+
+    const svgNamespace = 'http://www.w3.org/2000/svg';
+    function postcard(item) {
+      const figure = document.createElement('figure');
+      const art = document.createElementNS(svgNamespace, 'svg');
+      art.setAttribute('viewBox', '0 0 80 48');
+      art.setAttribute('aria-hidden', 'true');
+      const drawing = document.createElementNS(svgNamespace, 'use');
+      drawing.setAttribute('href', sprite.href + '#' + item.id);
+      art.append(drawing);
+      const caption = document.createElement('figcaption');
+      caption.textContent = pack.cards[item.name].name;
+      figure.append(art, caption);
+      return figure;
+    }
+
+    for (const {id, title, items} of groups) {
+      const link = document.createElement('a');
+      link.href = '#' + id;
+      link.textContent = title;
+      document.querySelector('nav').append(link);
+
+      const section = document.createElement('section');
+      section.id = id;
+      const heading = document.createElement('h2');
+      heading.textContent = title;
+      const count = document.createElement('small');
+      count.textContent = items.length + (id === 'meals' ? ' 道' : ' 件');
+      heading.append(count);
+      const grid = document.createElement('div');
+      grid.className = 'grid';
+      grid.append(...items.map(postcard));
+      section.append(heading, grid);
+      document.querySelector('#gallery').append(section);
+    }
+  </script>
+</body>
+</html>
